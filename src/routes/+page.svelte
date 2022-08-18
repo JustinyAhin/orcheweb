@@ -2,13 +2,9 @@
 	import Check from '$lib/assets/Check.svelte';
 </script>
 
-<section class="bg-jungle-green min-h-[70vh]">
+<section class="bg-jungle-green">
 	<div class="mx-auto max-w-7xl">
-		<header class="py-8">
-			<a href="/" class="text-2xl font-bold underline text-light-cyan">OrcheWeb</a>
-		</header>
-
-		<div class="pt-20 pb-32 space-y-6">
+		<div class="pt-16 pb-32 space-y-6">
 			<h1 class="w-10/12 text-light-cyan">
 				We create finely crafted websites for coaches and consultants.
 			</h1>
