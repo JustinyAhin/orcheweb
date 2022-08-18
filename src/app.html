@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
@@ -8,8 +8,17 @@
 
 		<!-- Splitbee Analytics -->
 		<script data-respect-dnt async src="https://cdn.splitbee.io/sb.js"></script>
+
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>
+
+	<body class="text-gray-800 font-work-sans">
 		%sveltekit.body%
 	</body>
 </html>
