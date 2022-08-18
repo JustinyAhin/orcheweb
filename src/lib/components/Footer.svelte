@@ -1,7 +1,7 @@
 <footer class="py-24 bg-jungle-green text-light-cyan">
 	<div class="main-container">
 		<a href="/" class="text-3xl font-bold">OrcheWeb</a>
-		<p class="sm:w-4/12">We create finely crafted websites for coaches and consultants.</p>
+		<p class="lg:w-4/12">We create finely crafted websites for coaches and consultants.</p>
 	</div>
 
 	<div class="pt-8 main-container">
