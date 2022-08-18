@@ -8,10 +8,13 @@ module.exports = {
 		colors: {
 			'jungle-green': '#092327',
 			'light-cyan': '#D7F9F1',
+			'radical-red': "#FF3366",
 			blue: {
 				600: '#2563EB'
 			},
 			gray: {
+				400: "#9CA3AF",
+				700: "#374151",
 				800: '#1F2937'
 			},
 			white: '#FFFFFF'

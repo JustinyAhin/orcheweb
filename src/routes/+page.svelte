@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Check from '$lib/assets/Check.svelte';
+</script>
+
 <section class="bg-jungle-green min-h-[70vh]">
 	<div class="mx-auto max-w-7xl">
 		<header class="py-8">
@@ -5,7 +9,7 @@
 		</header>
 
 		<div class="space-y-6 pb-32 pt-20">
-			<h1 class="w-10/12 text-7xl font-bold text-light-cyan">
+			<h1 class="w-10/12 text-light-cyan">
 				We create finely crafted websites for coaches and consultants.
 			</h1>
 			<p class="w-8/12 text-2xl text-light-cyan">
@@ -14,10 +18,120 @@
 			</p>
 
 			<a
-				href="/"
+				href="#pricing"
 				class="flex py-4 px-6 text-xl font-bold bg-light-cyan text-jungle-green w-fit shadow-default"
 				>Our Pricing</a
 			>
+		</div>
+	</div>
+</section>
+
+<section class="py-32 mx-auto max-w-7xl space-y-8" id="pricing">
+	<div class="space-y-4">
+		<h2 class="w-9/12">
+			Unique pricing plan tailored to your needs for <span class="text-radical-red"
+				>$2500 a month</span
+			>
+		</h2>
+		<p class="w-8/12">
+			We offer a <strong>unique pricing plan</strong> that covers our full range of services. This helps
+			us properly define our value proposition, and help you know exactly what you're getting and what
+			to expect.
+		</p>
+	</div>
+
+	<div class="space-y-4">
+		<h3>What's included</h3>
+		<hr class="text-gray-400" />
+	</div>
+
+	<div class="grid grid-cols-2 gap-8">
+		<div class="space-y-4">
+			<h4>Website development</h4>
+			<ul>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="space-y-4">
+			<h4>Custom integrations</h4>
+			<ul>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="space-y-4">
+			<h4>SEO Optimizations</h4>
+			<ul>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="space-y-4">
+			<h4>SEO Optimizations</h4>
+			<ul>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</li>
+				<li>
+					<svelte:component this={Check} />
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+				</li>
+			</ul>
 		</div>
 	</div>
 </section>
@@ -29,3 +143,17 @@
 		content="Subscription-based web development services for coachs and consultants."
 	/>
 </svelte:head>
+
+<style>
+	li {
+		@apply flex gap-2 items-center;
+	}
+
+	ul {
+		@apply space-y-1;
+	}
+
+	ul p {
+		@apply text-base;
+	}
+</style>
