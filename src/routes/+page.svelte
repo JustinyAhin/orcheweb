@@ -5,10 +5,10 @@
 <section class="bg-jungle-green min-h-[70vh]">
 	<div class="mx-auto max-w-7xl">
 		<header class="py-8">
-			<a href="/" class="text-light-cyan font-bold text-2xl underline">OrcheWeb</a>
+			<a href="/" class="text-2xl font-bold underline text-light-cyan">OrcheWeb</a>
 		</header>
 
-		<div class="space-y-6 pb-32 pt-20">
+		<div class="pt-20 pb-32 space-y-6">
 			<h1 class="w-10/12 text-light-cyan">
 				We create finely crafted websites for coaches and consultants.
 			</h1>
@@ -26,7 +26,7 @@
 	</div>
 </section>
 
-<section class="py-32 mx-auto max-w-7xl space-y-8" id="pricing">
+<section class="py-32 mx-auto space-y-8 max-w-7xl" id="pricing">
 	<div class="space-y-4">
 		<h2 class="w-9/12">
 			Unique pricing plan tailored to your needs for <span class="text-radical-red"
