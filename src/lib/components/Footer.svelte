@@ -4,7 +4,7 @@
 		<p class="w-4/12">We create finely crafted websites for coaches and consultants.</p>
 	</div>
 
-	<div class="mx-auto max-w-7xl pt-8">
+	<div class="pt-8 mx-auto max-w-7xl">
 		<p class="text-base">
 			Built with 🤍 by <a href="https://segbedji.com" class="font-bold hover:underline"
 				>Justin Ahinon</a
