@@ -3,12 +3,12 @@
 </script>
 
 <section class="bg-jungle-green">
-	<div class="mx-auto max-w-7xl">
+	<div class="main-container">
 		<div class="pt-16 pb-32 space-y-6">
-			<h1 class="w-10/12 text-light-cyan">
+			<h1 class="sm:w-10/12 text-light-cyan">
 				We create finely crafted websites for coaches and consultants.
 			</h1>
-			<p class="w-8/12 text-2xl text-light-cyan">
+			<p class="sm:w-8/12 text-2xl text-light-cyan">
 				For a fixed monthly fee, we create a <strong>custom website</strong> for you, based on your needs,
 				that will help you build a successful online presence for your business.
 			</p>
@@ -22,14 +22,14 @@
 	</div>
 </section>
 
-<section class="py-32 mx-auto space-y-8 max-w-7xl" id="pricing">
+<section class="py-32 main-container space-y-8" id="pricing">
 	<div class="space-y-4">
-		<h2 class="w-9/12">
+		<h2 class="sm:w-9/12">
 			Unique pricing plan tailored to your needs for <span class="text-radical-red"
 				>$2500 a month</span
 			>
 		</h2>
-		<p class="w-8/12">
+		<p class="sm:w-8/12">
 			We offer a <strong>unique pricing plan</strong> that covers our full range of services. This helps
 			us properly define our value proposition, and help you know exactly what you're getting and what
 			to expect.
@@ -41,7 +41,7 @@
 		<hr class="text-gray-400" />
 	</div>
 
-	<div class="grid grid-cols-2 gap-8">
+	<div class="grid sm:grid-cols-2 gap-8">
 		<div class="space-y-4">
 			<h4>Website development</h4>
 			<ul>

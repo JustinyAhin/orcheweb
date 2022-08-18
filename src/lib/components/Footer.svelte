@@ -1,10 +1,10 @@
 <footer class="py-24 bg-jungle-green text-light-cyan">
-	<div class="mx-auto max-w-7xl">
+	<div class="main-container">
 		<a href="/" class="text-3xl font-bold">OrcheWeb</a>
-		<p class="w-4/12">We create finely crafted websites for coaches and consultants.</p>
+		<p class="sm:w-4/12">We create finely crafted websites for coaches and consultants.</p>
 	</div>
 
-	<div class="pt-8 mx-auto max-w-7xl">
+	<div class="pt-8 main-container">
 		<p class="text-base">
 			Built with 🤍 by <a href="https://segbedji.com" class="font-bold hover:underline"
 				>Justin Ahinon</a
