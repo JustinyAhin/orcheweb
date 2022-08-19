@@ -32,4 +32,9 @@
 	.main-container {
 		@apply mx-auto max-w-7xl px-6;
 	}
+
+	/* Features */
+	.feature svg {
+		@apply stroke-radical-red h-16 w-16;
+	}
 }

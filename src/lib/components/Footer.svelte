@@ -11,7 +11,7 @@
 			>
 		</p>
 
-		<nav>
+		<nav class="flex gap-8">
 			<a href="https://twitter.com/iamsegbedji">Twitter</a>
 			<a href="https://www.linkedin.com/in/justinahinon/">LinkedIn</a>
 		</nav>
