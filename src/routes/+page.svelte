@@ -1,11 +1,5 @@
 <script lang="ts">
-	import Feature from '$lib/components/Feature.svelte';
-
-	import CodeIcon from '$lib/assets/icons/Code.svelte';
-	import CashIcon from '$lib/assets/icons/Cash.svelte';
-	import PencilIcon from '$lib/assets/icons/Pencil.svelte';
-	import AdjustmentsIcon from '$lib/assets/icons/Adjustments.svelte';
-	import LightningIcon from '$lib/assets/icons/Lightning.svelte';
+	import Features from '$lib/components/Features.svelte';
 </script>
 
 <section class="bg-jungle-green">
@@ -43,44 +37,7 @@
 	</div>
 
 	<h3>What's included</h3>
-
-	<div class="grid sm:grid-cols-2 gap-8">
-		<Feature
-			iconReference={CodeIcon}
-			title="Custom website development"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse neque expedita molestias praesentium iste accusantium tenetur? In, aliquid? Impedit nobis tempore unde architecto iusto quidem, debitis mollitia a non iure totam! Perspiciatis, temporibus accusantium."
-		/>
-
-		<Feature
-			iconReference={CodeIcon}
-			title="SEO Optimization"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse neque expedita molestias praesentium iste accusantium tenetur? In, aliquid? Impedit nobis tempore unde architecto iusto quidem, debitis mollitia a non iure totam! Perspiciatis, temporibus accusantium."
-		/>
-
-		<Feature
-			iconReference={LightningIcon}
-			title="Performance by default"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse neque expedita molestias praesentium iste accusantium tenetur? In, aliquid? Impedit nobis tempore unde architecto iusto quidem, debitis mollitia a non iure totam! Perspiciatis, temporibus accusantium."
-		/>
-
-		<Feature
-			iconReference={PencilIcon}
-			title="Unlimited free revisions"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse neque expedita molestias praesentium iste accusantium tenetur? In, aliquid? Impedit nobis tempore unde architecto iusto quidem, debitis mollitia a non iure totam! Perspiciatis, temporibus accusantium."
-		/>
-
-		<Feature
-			iconReference={CashIcon}
-			title="Fixed and predictable fee"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse neque expedita molestias praesentium iste accusantium tenetur? In, aliquid? Impedit nobis tempore unde architecto iusto quidem, debitis mollitia a non iure totam! Perspiciatis, temporibus accusantium."
-		/>
-
-		<Feature
-			iconReference={AdjustmentsIcon}
-			title="Custom integrations"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse neque expedita molestias praesentium iste accusantium tenetur? In, aliquid? Impedit nobis tempore unde architecto iusto quidem, debitis mollitia a non iure totam! Perspiciatis, temporibus accusantium."
-		/>
-	</div>
+	<Features />
 </section>
 
 <svelte:head>
