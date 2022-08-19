@@ -9,6 +9,19 @@
 		// Open the first FAQ item on page
 		const faqItems = document.querySelectorAll('details');
 		faqItems[0].open = true;
+
+		// Close all other FAQ items when one is clicked
+		faqItems.forEach((faqItem) => {
+			faqItem.addEventListener('click', () => {
+				const otherFaqItems = Array.from(faqItems).filter((item) => item !== faqItem);
+
+				otherFaqItems.forEach((item) => {
+					if (item.open) {
+						item.open = false;
+					}
+				});
+			});
+		});
 	});
 </script>
 
