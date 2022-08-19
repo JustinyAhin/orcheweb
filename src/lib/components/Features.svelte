@@ -8,7 +8,7 @@
 	import LightningIcon from '$lib/assets/icons/Lightning.svelte';
 </script>
 
-<div class="grid sm:grid-cols-2 gap-8">
+<div class="grid gap-8 sm:grid-cols-2">
 	<SingleFeature
 		iconReference={CodeIcon}
 		title="Custom website development"

@@ -6,7 +6,7 @@
 	export let description: string;
 </script>
 
-<div class="space-y-2 border border-gray-400 p-8 feature">
+<div class="p-8 space-y-2 border border-gray-400 feature">
 	<svelte:component this={iconReference} />
 
 	<h4 class="text-3xl">{title}</h4>

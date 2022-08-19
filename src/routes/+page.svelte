@@ -8,7 +8,7 @@
 			<h1 class="sm:w-10/12 text-light-cyan">
 				We create finely crafted websites for coaches and consultants.
 			</h1>
-			<p class="sm:w-8/12 text-2xl text-light-cyan">
+			<p class="text-2xl sm:w-8/12 text-light-cyan">
 				For a fixed monthly fee, we create a <strong>custom website</strong> for you, based on your needs,
 				that will help you build a successful online presence for your business.
 			</p>
@@ -22,7 +22,7 @@
 	</div>
 </section>
 
-<section class="py-32 main-container space-y-8" id="pricing">
+<section class="py-32 space-y-8 main-container" id="pricing">
 	<div class="space-y-4">
 		<h2 class="sm:w-9/12">
 			Unique pricing plan tailored to your needs for <span class="text-radical-red"
