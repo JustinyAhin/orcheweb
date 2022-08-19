@@ -37,8 +37,12 @@
 		@apply mx-auto max-w-7xl px-6;
 	}
 
-	/* Features */
+	/* Misc */
 	.feature svg {
 		@apply stroke-radical-red h-16 w-16;
+	}
+
+	summary svg {
+		@apply stroke-radical-red stroke-[3px];
 	}
 }

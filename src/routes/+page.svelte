@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Features from '$lib/components/Features.svelte';
+	import FaQs from '$lib/components/FAQs.svelte';
 </script>
 
 <section class="bg-jungle-green">
@@ -13,16 +14,14 @@
 				that will help you build a successful online presence for your business.
 			</p>
 
-			<a
-				href="#pricing"
-				class="action-default bg-light-cyan text-jungle-green shadow-default"
+			<a href="#pricing" class="action-default bg-light-cyan text-jungle-green shadow-default"
 				>Our Pricing</a
 			>
 		</div>
 	</div>
 </section>
 
-<section class="py-32 space-y-8 main-container" id="pricing">
+<section class="pt-32 py-16 space-y-16 main-container" id="pricing">
 	<div class="space-y-4">
 		<h2 class="sm:w-9/12">
 			Unique pricing plan tailored to your needs for <span class="text-radical-red"
@@ -34,16 +33,26 @@
 			us properly define our value proposition, and help you know exactly what you're getting and what
 			to expect.
 		</p>
+		<p>
+			You can pause or cancel your subscription anytime. Read our <a
+				href="#faqs"
+				class="text-radical-red hover:underline font-bold">FAQs</a
+			> for more details
+		</p>
 
-		<a
-			href="/"
-			class="action-default text-light-cyan bg-jungle-green shadow-dark"
-			>Get Started</a
-		>
+		<a href="/" class="action-default text-light-cyan bg-jungle-green shadow-dark">Get Started</a>
 	</div>
 
-	<h3>What's included</h3>
-	<Features />
+	<div class="space-y-8">
+		<h3>What's included</h3>
+		<Features />
+	</div>
+</section>
+
+<section class="py-16 space-y-8 main-container" id="faq">
+	<h2>FAQs</h2>
+
+	<FaQs />
 </section>
 
 <svelte:head>
