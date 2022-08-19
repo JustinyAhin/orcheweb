@@ -9,7 +9,7 @@
 	<div class="">
 		<img src={imageUrl} alt="" class="rounded-t-2xl" />
 	</div>
-	<div class="p-8 sm:p-12 space-y-4 rounded-b-2xl">
+	<div class="p-8 space-y-4 rounded-b-2xl sm:p-12">
 		<h3 class="text-3xl hover:underline">
 			<a href={url}>{title}</a>
 		</h3>

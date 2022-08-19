@@ -2,7 +2,7 @@
 	import JustinPortrait from '$lib/assets/images/justin-ahinon-full-portrait.webp';
 </script>
 
-<section class="py-32 main-container space-y-8 sm:w-9/12">
+<section class="py-32 space-y-8 sm:w-9/12 main-container">
 	<header>
 		<h1>OrcheWeb is a one person business</h1>
 	</header>

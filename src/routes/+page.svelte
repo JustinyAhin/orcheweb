@@ -86,15 +86,15 @@
 	<a href="/" class="action-default text-light-cyan bg-jungle-green shadow-dark">Get Started</a>
 </section>
 
-<section class="bg-light-cyan py-32 text-jungle-green" id="textimonials">
-	<div class="main-container space-y-16">
+<section class="py-32 bg-light-cyan text-jungle-green" id="textimonials">
+	<div class="space-y-16 main-container">
 		<h2 class="sm:w-9/12">Don't just take our word for it. See what our customers say</h2>
 
-		<div class="bg-white shadow-m flex flex-col sm:flex-row">
+		<div class="flex flex-col bg-white sm:flex-row shadow-m">
 			<div class="basis-6/12">
 				<img src={WomanPicture} alt="" />
 			</div>
-			<div class="basis-6/12 flex justify-center p-8 sm:p-16 gap-8 flex-col">
+			<div class="flex flex-col gap-8 justify-center p-8 sm:p-16 basis-6/12">
 				<p class="text-2xl">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ab fugit deserunt
 					architecto non fuga possimus, consectetur eligendi sunt harum alias repellendus atque, eum
@@ -102,7 +102,7 @@
 				</p>
 				<div class="space-y-1">
 					<h3>Jane Doe</h3>
-					<p class="text-2xl text-gray-600 font-bold">VP of Marketing at Company Inc.</p>
+					<p class="text-2xl font-bold text-gray-600">VP of Marketing at Company Inc.</p>
 				</div>
 			</div>
 		</div>
