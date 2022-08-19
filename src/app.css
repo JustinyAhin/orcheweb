@@ -27,12 +27,11 @@
 }
 
 @layer components {
-
 	/* Links */
 	a.default {
 		@apply text-radical-red font-bold hover:underline;
 	}
-	
+
 	/* Actions */
 	.action-default {
 		@apply flex py-4 px-6 text-xl font-bold w-fit;
