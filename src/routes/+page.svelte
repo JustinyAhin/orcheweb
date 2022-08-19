@@ -2,6 +2,8 @@
 	import SingleCaseStudy from '$lib/components/SingleCaseStudy.svelte';
 	import Features from '$lib/components/Features.svelte';
 	import FaQs from '$lib/components/FAQs.svelte';
+
+	import WomanPicture from '$lib/assets/images/woman-wearing-a-suit.webp';
 </script>
 
 <section class="bg-jungle-green">
@@ -83,6 +85,29 @@
 	<FaQs />
 
 	<a href="/" class="action-default text-light-cyan bg-jungle-green shadow-dark">Get Started</a>
+</section>
+
+<section class="bg-light-cyan py-32 text-jungle-green" id="textimonials">
+	<div class="main-container space-y-16">
+		<h2 class="sm:w-9/12">Don't just take our word for it. See what our customers say</h2>
+
+		<div class="bg-white shadow-m flex flex-col sm:flex-row">
+			<div class="basis-6/12">
+				<img src={WomanPicture} alt="" />
+			</div>
+			<div class="basis-6/12 flex justify-center p-8 sm:p-16 gap-8 flex-col">
+				<p class="text-2xl">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ab fugit deserunt
+					architecto non fuga possimus, consectetur eligendi sunt harum alias repellendus atque, eum
+					iure! Praesentium esse obcaecati quae error.
+				</p>
+				<div class="space-y-1">
+					<h3>Jane Doe</h3>
+					<p class="text-2xl text-gray-600 font-bold">VP of Marketing at Company Inc.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <svelte:head>
