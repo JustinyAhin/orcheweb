@@ -22,7 +22,8 @@ module.exports = {
 		},
 		extend: {
 			boxShadow: {
-				default: '6px 6px 0 0 rgba(215, 249, 241, .25)'
+				default: '6px 6px 0 0 rgba(215, 249, 241, .25)',
+				dark: '6px 6px 0 0 rgba(9, 35, 39, .25)'
 			}
 		}
 	},

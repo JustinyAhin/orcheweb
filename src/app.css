@@ -27,6 +27,11 @@
 }
 
 @layer components {
+	/* Actions */
+	.action-default {
+		@apply flex py-4 px-6 text-xl font-bold w-fit;
+	}
+
 	/* Containers */
 	.main-container {
 		@apply mx-auto max-w-7xl px-6;

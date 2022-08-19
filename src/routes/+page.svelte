@@ -15,7 +15,7 @@
 
 			<a
 				href="#pricing"
-				class="flex py-4 px-6 text-xl font-bold bg-light-cyan text-jungle-green w-fit shadow-default"
+				class="action-default bg-light-cyan text-jungle-green shadow-default"
 				>Our Pricing</a
 			>
 		</div>
@@ -34,6 +34,12 @@
 			us properly define our value proposition, and help you know exactly what you're getting and what
 			to expect.
 		</p>
+
+		<a
+			href="/"
+			class="action-default text-light-cyan bg-jungle-green shadow-dark"
+			>Get Started</a
+		>
 	</div>
 
 	<h3>What's included</h3>
