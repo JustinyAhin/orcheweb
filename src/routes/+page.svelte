@@ -21,7 +21,7 @@
 	</div>
 </section>
 
-<section class="pt-32 py-16 space-y-16 main-container" id="pricing">
+<section class="py-16 pt-32 space-y-16 main-container" id="pricing">
 	<div class="space-y-4">
 		<h2 class="sm:w-9/12">
 			Unique pricing plan tailored to your needs for <span class="text-radical-red"
@@ -36,7 +36,7 @@
 		<p>
 			You can pause or cancel your subscription anytime. Read our <a
 				href="#faqs"
-				class="text-radical-red hover:underline font-bold">FAQs</a
+				class="font-bold hover:underline text-radical-red">FAQs</a
 			> for more details
 		</p>
 

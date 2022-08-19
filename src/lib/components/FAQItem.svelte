@@ -12,8 +12,8 @@
 	});
 </script>
 
-<details class="space-y-4 border border-gray-400 p-8 cursor-pointer">
-	<summary class="flex items-center justify-between">
+<details class="p-8 space-y-4 border border-gray-400 cursor-pointer">
+	<summary class="flex justify-between items-center">
 		<h3 class="text-3xl">{question}</h3>
 		<svelte:component this={PlusIcon} />
 	</summary>
