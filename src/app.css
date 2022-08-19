@@ -27,9 +27,24 @@
 }
 
 @layer components {
+
+	/* Links */
+	a.default {
+		@apply text-radical-red font-bold hover:underline;
+	}
+	
 	/* Actions */
 	.action-default {
 		@apply flex py-4 px-6 text-xl font-bold w-fit;
+	}
+
+	/* Content */
+	.content {
+		@apply space-y-4;
+	}
+
+	.content ul {
+		@apply text-xl list-disc pl-8;
 	}
 
 	/* Containers */

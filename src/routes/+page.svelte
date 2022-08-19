@@ -63,9 +63,8 @@
 				and what to expect.
 			</p>
 			<p>
-				You can pause or cancel your subscription anytime. Read our <a
-					href="#faqs"
-					class="font-bold hover:underline text-radical-red">FAQs</a
+				You can pause or cancel your subscription anytime. Read our <a href="#faqs" class="default"
+					>FAQs</a
 				> for more details
 			</p>
 		</div>
