@@ -1,4 +1,5 @@
 <script lang="ts">
+	import SingleCaseStudy from '$lib/components/SingleCaseStudy.svelte';
 	import Features from '$lib/components/Features.svelte';
 	import FaQs from '$lib/components/FAQs.svelte';
 </script>
@@ -24,46 +25,24 @@
 <section class="py-16 pt-32 space-y-16 main-container" id="cases-studies">
 	<h2 class="sm:w-9/12">Check a curated list of what we've been working on recently</h2>
 
-	<div class="flex gap-8 flex-col sm:flex-row">
-		<div class="shadow-xl bg-light-cyan flex flex-col">
-			<div class="">
-				<img
-					src="https://assets.website-files.com/627d1f8706517a0c4426f5e1/627e8767c939f34ba668cb34_youtube-case-study-image-agencyst-webflow-ecommerce-template.png"
-					alt=""
-					class="rounded-t-2xl"
-				/>
-			</div>
-			<div class="space-y-4 p-12 rounded-b-2xl">
-				<h3 class="text-3xl hover:underline">
-					<a href="/">How we rebuilt a custom website for Company Inc.</a>
-				</h3>
-				<p class="text-gray-700">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia blanditiis,
-					minus animi dolore ducimus libero vero odit est, quibusdam iure consequuntur velit
-					impedit. Dolorum non vitae fugit possimus inventore.
-				</p>
-			</div>
-		</div>
+	<div class="flex flex-col gap-8 sm:flex-row">
+		<SingleCaseStudy
+			title="How we rebuilt a custom website for Company Inc."
+			imageUrl="https://assets.website-files.com/627d1f8706517a0c4426f5e1/627e8767c939f34ba668cb34_youtube-case-study-image-agencyst-webflow-ecommerce-template.png"
+			url="/"
+			abstract="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia blanditiis,
+			minus animi dolore ducimus libero vero odit est, quibusdam iure consequuntur velit
+			impedit. Dolorum non vitae fugit possimus inventore."
+		/>
 
-		<div class="shadow-xl bg-light-cyan flex flex-col">
-			<div class="">
-				<img
-					src="https://assets.website-files.com/627d1f8706517a0c4426f5e1/627e85a0037d531d46a6de23_facebook-case-study-image-agencyst-webflow-ecommerce-template.png"
-					alt=""
-					class="rounded-t-2xl"
-				/>
-			</div>
-			<div class="space-y-4 p-12 rounded-b-2xl">
-				<h3 class="text-3xl hover:underline">
-					<a href="/">How we rebuilt a custom website for Company Inc.</a>
-				</h3>
-				<p class="text-gray-700">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia blanditiis,
-					minus animi dolore ducimus libero vero odit est, quibusdam iure consequuntur velit
-					impedit. Dolorum non vitae fugit possimus inventore.
-				</p>
-			</div>
-		</div>
+		<SingleCaseStudy
+			title="How we rebuilt a custom website for Company Inc."
+			imageUrl="https://assets.website-files.com/627d1f8706517a0c4426f5e1/627e85a0037d531d46a6de23_facebook-case-study-image-agencyst-webflow-ecommerce-template.png"
+			url="/"
+			abstract="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia blanditiis,
+			minus animi dolore ducimus libero vero odit est, quibusdam iure consequuntur velit
+			impedit. Dolorum non vitae fugit possimus inventore."
+		/>
 	</div>
 </section>
 
@@ -75,7 +54,7 @@
 			>
 		</h2>
 
-		<div class="sm:w-9/12 space-y-4">
+		<div class="space-y-4 sm:w-9/12">
 			<p>
 				We offer a <strong>unique pricing plan</strong> that covers our full range of services. This
 				helps us properly define our value proposition, and help you know exactly what you're getting
