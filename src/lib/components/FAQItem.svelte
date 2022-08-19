@@ -1,28 +1,8 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import PlusIcon from '$lib/assets/icons/Plus.svelte';
 
 	export let question: string;
 	export let answer: string;
-
-	onMount(() => {
-		// Open the first FAQ item on page
-		const faqItems = document.querySelectorAll('details');
-		faqItems[0].open = true;
-
-		// Close all other FAQ items when one is clicked
-		faqItems.forEach((faqItem) => {
-			faqItem.addEventListener('click', () => {
-				const otherFaqItems = Array.from(faqItems).filter((item) => item !== faqItem);
-
-				otherFaqItems.forEach((item) => {
-					if (item.open) {
-						item.open = false;
-					}
-				});
-			});
-		});
-	});
 </script>
 
 <details class="p-8 space-y-4 border border-gray-400 cursor-pointer">
@@ -32,3 +12,20 @@
 	</summary>
 	<p>{answer}</p>
 </details>
+
+<style>
+	details[open] summary ~ * {
+		animation: sweep 0.5s ease-in-out;
+	}
+
+	@keyframes sweep {
+		0% {
+			opacity: 0;
+			margin-left: -10px;
+		}
+		100% {
+			opacity: 1;
+			margin-left: 0px;
+		}
+	}
+</style>

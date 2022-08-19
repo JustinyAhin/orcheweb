@@ -43,6 +43,6 @@
 	}
 
 	summary svg {
-		@apply stroke-radical-red stroke-[3px];
+		@apply stroke-radical-red stroke-[px];
 	}
 }
