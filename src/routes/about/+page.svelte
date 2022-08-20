@@ -1,4 +1,4 @@
-<section class="py-32 space-y-8 sm:w-9/12 main-container">
+<section class="py-32 space-y-8 main-container">
 	<header>
 		<h1>OrcheWeb is a one person business</h1>
 	</header>
