@@ -3,8 +3,8 @@
 </script>
 
 <details class="p-8 space-y-4 border border-gray-400 cursor-pointer">
-	<summary class="flex justify-between items-center">
-		<h3 class="text-3xl">
+	<summary class="flex justify-between items-center gap-2">
+		<h3 class="text-2xl sm:text-3xl">
 			<slot name="question" />
 		</h3>
 		<svelte:component this={PlusIcon} />
