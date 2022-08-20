@@ -6,7 +6,7 @@
 		</p>
 	</div>
 
-	<div class="pt-8 main-container space-y-2">
+	<div class="pt-8 space-y-2 main-container">
 		<p class="text-base">
 			Built with 🤍 by <a href="https://segbedji.com" class="font-bold hover:underline"
 				>Justin Ahinon</a

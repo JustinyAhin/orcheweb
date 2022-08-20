@@ -5,15 +5,18 @@
 
 	<div class="content">
 		<p>
-			I am <a href="https://linkedin.com/in/justinahinon" target="_blank" class="default">Justin Ahinon</a>, the
-			founder of OrcheWeb. I have been in the software development industry for over 5 years now.
-			During my career, I have worked on a variety of projects, from corporate web development to
-			custom app development and integration softwares.
+			I am <a href="https://linkedin.com/in/justinahinon" target="_blank" class="default"
+				>Justin Ahinon</a
+			>, the founder of OrcheWeb. I have been in the software development industry for over 5 years
+			now. During my career, I have worked on a variety of projects, from corporate web development
+			to custom app development and integration softwares.
 		</p>
 		<p>
 			For the last three years, I have been deeply involved in the Open Source ecosystem, and
-			especially <a href="https://profiles.wordpress.org/justinahinon" target="_blank" class="default"
-				>contributed to WordPress full-time for a couple of years</a
+			especially <a
+				href="https://profiles.wordpress.org/justinahinon"
+				target="_blank"
+				class="default">contributed to WordPress full-time for a couple of years</a
 			>. During that time, I've many major and minor releases, and contributed a lot the
 			documentation, testing, and accessibility for the CMS.
 		</p>
