@@ -10,7 +10,7 @@
 	<div class="main-container">
 		<div class="pt-16 pb-32 space-y-6">
 			<h1 class="sm:w-10/12 text-light-cyan">
-				We create finely crafted websites for coaches and consultants.
+				We create finely crafted websites for coaches and consulting businesses.
 			</h1>
 			<p class="text-2xl sm:w-8/12 text-light-cyan">
 				For a fixed monthly fee, we create a <strong>custom website</strong> for you, based on your needs,
@@ -113,6 +113,6 @@
 	<title>OrcheWeb</title>
 	<meta
 		name="description"
-		content="Subscription-based web development services for coachs and consultants."
+		content="Subscription-based web development services for coachs and consulting businesses."
 	/>
 </svelte:head>
