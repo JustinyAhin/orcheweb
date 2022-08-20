@@ -2,8 +2,6 @@
 	import SingleCaseStudy from '$lib/components/SingleCaseStudy.svelte';
 	import Features from '$lib/components/Features.svelte';
 	import FaQs from '$lib/components/FAQs.svelte';
-
-	import WomanPicture from '$lib/assets/images/woman-wearing-a-suit.webp';
 </script>
 
 <section class="bg-jungle-green">
@@ -25,27 +23,17 @@
 </section>
 
 <section class="py-16 pt-32 space-y-16 main-container" id="cases-studies">
-	<h2 class="sm:w-9/12">Check a curated list of what we've been working on recently</h2>
+	<h2>Check a curated list of what we've been working on recently</h2>
 
-	<div class="flex flex-col gap-8 sm:flex-row">
-		<SingleCaseStudy
-			title="How we rebuilt a custom website for Company Inc."
-			imageUrl="https://assets.website-files.com/627d1f8706517a0c4426f5e1/627e8767c939f34ba668cb34_youtube-case-study-image-agencyst-webflow-ecommerce-template.png"
-			url="/"
-			abstract="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia blanditiis,
-			minus animi dolore ducimus libero vero odit est, quibusdam iure consequuntur velit
-			impedit. Dolorum non vitae fugit possimus inventore."
-		/>
-
-		<SingleCaseStudy
-			title="How we rebuilt a custom website for Company Inc."
-			imageUrl="https://assets.website-files.com/627d1f8706517a0c4426f5e1/627e85a0037d531d46a6de23_facebook-case-study-image-agencyst-webflow-ecommerce-template.png"
-			url="/"
-			abstract="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia blanditiis,
-			minus animi dolore ducimus libero vero odit est, quibusdam iure consequuntur velit
-			impedit. Dolorum non vitae fugit possimus inventore."
-		/>
-	</div>
+	<SingleCaseStudy title="How we rebuilt a new web experience for Nerdy Joe." url="/">
+		<svelte:fragment slot="description">
+			<p>
+				Nerdy Joe is a email marketing company that specializes in creating high-quality email copy
+				for businesses. We have worked with them to create a brand new website that reflects the
+				company's new brand.
+			</p>
+		</svelte:fragment>
+	</SingleCaseStudy>
 </section>
 
 <section class="py-16 space-y-16 main-container" id="pricing">
@@ -92,17 +80,22 @@
 
 		<div class="flex flex-col bg-white sm:flex-row shadow-m">
 			<div class="basis-6/12">
-				<img src={WomanPicture} alt="" />
+				<img
+					src="https://res.cloudinary.com/orcheweb/image/upload/v1661013284/orcheweb/portrait-ernest-bio-bogore_zyvnsm.webp"
+					alt="Ernest Bio Bogore portrait"
+				/>
 			</div>
 			<div class="flex flex-col gap-8 justify-center p-8 sm:p-16 basis-6/12">
 				<p class="text-2xl">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ab fugit deserunt
-					architecto non fuga possimus, consectetur eligendi sunt harum alias repellendus atque, eum
-					iure! Praesentium esse obcaecati quae error.
+					I had the opportunity to work with Justin on a project and boy was I impressed.
+				</p>
+				<p class="text-2xl">
+					Justin is very professional and transparent in his work. He even went beyond the scope of
+					work and did stuff that he thought could benefit me.
 				</p>
 				<div class="space-y-1">
-					<h3>Jane Doe</h3>
-					<p class="text-2xl font-bold text-gray-600">VP of Marketing at Company Inc.</p>
+					<h3>Ernest Bio Bogore</h3>
+					<p class="text-2xl font-bold text-gray-600">Head of Email at Company Nerdy Joe</p>
 				</div>
 			</div>
 		</div>
