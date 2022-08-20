@@ -81,8 +81,10 @@
 		<div class="flex flex-col bg-white sm:flex-row shadow-m">
 			<div class="basis-6/12">
 				<img
-					src="https://res.cloudinary.com/orcheweb/image/upload/v1661013284/orcheweb/portrait-ernest-bio-bogore_zyvnsm.webp"
+					src="https://res.cloudinary.com/orcheweb/image/upload/w_600/v1661013284/orcheweb/portrait-ernest-bio-bogore_zyvnsm.webp"
 					alt="Ernest Bio Bogore portrait"
+					height="600"
+					width="600"
 				/>
 			</div>
 			<div class="flex flex-col gap-8 justify-center p-8 sm:p-16 basis-6/12">
