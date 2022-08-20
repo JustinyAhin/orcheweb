@@ -78,7 +78,7 @@
 	</div>
 </section>
 
-<section class="py-16 space-y-8 main-container" id="faq">
+<section class="py-16 space-y-8 main-container" id="faqs">
 	<h2>FAQs</h2>
 
 	<FaQs />
