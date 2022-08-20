@@ -3,7 +3,7 @@
 </script>
 
 <details class="p-8 space-y-4 border border-gray-400 cursor-pointer">
-	<summary class="flex gap-2 justify-between items-center">
+	<summary class="flex gap-2 justify-between items-center list-none">
 		<h3 class="text-2xl sm:text-3xl">
 			<slot name="question" />
 		</h3>

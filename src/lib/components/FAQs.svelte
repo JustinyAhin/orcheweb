@@ -64,4 +64,42 @@
 			</p>
 		</svelte:fragment>
 	</FaqItem>
+
+	<FaqItem>
+		<svelte:fragment slot="question">Will you also design my website?</svelte:fragment>
+		<svelte:fragment slot="answer">
+			<p>
+				We do not provide UI design services. That means that in most case, you will have to come
+				with your own design that we will implemente.
+			</p>
+			<p>
+				However, we can discuss about this if you haven't thought about it yet, an we will be happy
+				to recommend to you some excellent UI desginers we have been working with.
+			</p>
+		</svelte:fragment>
+	</FaqItem>
+
+	<FaqItem>
+		<svelte:fragment slot="question">Who will I be working with?</svelte:fragment>
+		<svelte:fragment slot="answer">
+			<p>
+				OrcheWeb is solely run by me, <a href="https://segbedji.com" class="default"
+					>Justin Ahinon</a
+				>. You can read more about myself and my background on the
+				<a href="/about" class="default">about page</a>.
+			</p>
+		</svelte:fragment>
+	</FaqItem>
+
+	<FaqItem>
+		<svelte:fragment slot="question">What tech stack do you use?</svelte:fragment>
+		<svelte:fragment slot="answer">
+			<p>
+				Our tech stack really depends on the type of website you are looking to build, its size, and
+				other specific requirements you might have. Check our <a href="/stacks" class="default"
+					>stacks page</a
+				> to learn more about those.
+			</p>
+		</svelte:fragment>
+	</FaqItem>
 </div>
