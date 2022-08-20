@@ -96,9 +96,7 @@
 		<svelte:fragment slot="answer">
 			<p>
 				Our tech stack really depends on the type of website you are looking to build, its size, and
-				other specific requirements you might have. Check our <a href="/stacks" class="default"
-					>stacks page</a
-				> to learn more about those.
+				other specific requirements you might have.
 			</p>
 		</svelte:fragment>
 	</FaqItem>
