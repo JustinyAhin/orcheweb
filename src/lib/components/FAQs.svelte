@@ -23,43 +23,42 @@
 </script>
 
 <div class="space-y-8">
-	<FaqItem
-		question="What is a website?"
-		answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, iusto veniam culpa velit quia
-    aspernatur repudiandae inventore, similique atque laboriosam dicta asperiores voluptatum
-    consectetur eveniet perspiciatis a ea? Ratione dolorum, explicabo dolore repellat voluptatum
-    sapiente reiciendis at quia praesentium debitis."
-	/>
+	<FaqItem>
+		<svelte:fragment slot="question">How "unlimited" is our plan?</svelte:fragment>
+		<svelte:fragment slot="answer">
+			<p>
+				We offer an "unlimited" plan that allows you to request as many edits as you want. Your
+				requests will be applied one at a time, until you are happy with the result.
+			</p>
+			<p>That means we will complete the next request as soon as the previous one is complete.</p>
+			<p>
+				A request can be things like updating a content on a page, adding a new page, integrating a
+				chatbot, adding a new feature, or a payment integration.
+			</p>
+		</svelte:fragment>
+	</FaqItem>
 
-	<FaqItem
-		question="Lorem, ipsum dolor sit amet consectetur adipisicing"
-		answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, iusto veniam culpa velit quia
-    aspernatur repudiandae inventore, similique atque laboriosam dicta asperiores voluptatum
-    consectetur eveniet perspiciatis a ea? Ratione dolorum, explicabo dolore repellat voluptatum
-    sapiente reiciendis at quia praesentium debitis."
-	/>
-
-	<FaqItem
-		question="Sunt pariatur irure excepteur sunt incididunt"
-		answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, iusto veniam culpa velit quia
-    aspernatur repudiandae inventore, similique atque laboriosam dicta asperiores voluptatum
-    consectetur eveniet perspiciatis a ea? Ratione dolorum, explicabo dolore repellat voluptatum
-    sapiente reiciendis at quia praesentium debitis."
-	/>
-
-	<FaqItem
-		question="Sapiente reiciendis at quia praesentium debitis"
-		answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, iusto veniam culpa velit quia
-    aspernatur repudiandae inventore, similique atque laboriosam dicta asperiores voluptatum
-    consectetur eveniet perspiciatis a ea? Ratione dolorum, explicabo dolore repellat voluptatum
-    sapiente reiciendis at quia praesentium debitis."
-	/>
-
-	<FaqItem
-		question="What is a website?"
-		answer="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, iusto veniam culpa velit quia
-    aspernatur repudiandae inventore, similique atque laboriosam dicta asperiores voluptatum
-    consectetur eveniet perspiciatis a ea? Ratione dolorum, explicabo dolore repellat voluptatum
-    sapiente reiciendis at quia praesentium debitis."
-	/>
+	<FaqItem>
+		<svelte:fragment slot="question"
+			>How do I know that your services are a good fit for my needs?</svelte:fragment
+		>
+		<svelte:fragment slot="answer">
+			<p>
+				We advertised ourselves as a service for coaches and consulting businesses. That's because
+				over the years, we've worked on several projects within this niche, and created some
+				patterns and best practises that we can apply to your project. If you fall into this
+				category, our services are a good fit for you.
+			</p>
+			<p>
+				If you've also experienced having to pay enormous amounts for things like adding a
+				newsletter to a website, our subscription service will definitely be something you will
+				like.
+			</p>
+			<p>
+				You can check some cases studies of projects we've worked on <a href="/" class="default">here</a> and
+				<a href="/" class="default">here</a>
+				to get an idea of what you can expect from us.
+			</p>
+		</svelte:fragment>
+	</FaqItem>
 </div>
