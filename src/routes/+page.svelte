@@ -25,7 +25,10 @@
 <section class="py-16 pt-32 space-y-16 main-container" id="cases-studies">
 	<h2>Check a curated list of what we've been working on recently</h2>
 
-	<SingleCaseStudy title="How we rebuilt a new web experience for Nerdy Joe." url="/">
+	<SingleCaseStudy
+		title="How we rebuilt a new web experience for Nerdy Joe"
+		url="https://www.nerdyjoe.com"
+	>
 		<svelte:fragment slot="description">
 			<p>
 				Nerdy Joe is a email marketing company that specializes in creating high-quality email copy
