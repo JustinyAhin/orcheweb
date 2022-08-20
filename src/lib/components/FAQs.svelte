@@ -100,4 +100,21 @@
 			</p>
 		</svelte:fragment>
 	</FaqItem>
+
+	<FaqItem>
+		<svelte:fragment slot="question"
+			>What happens when I click on the "Get started" button?</svelte:fragment
+		>
+		<svelte:fragment slot="answer">
+			<p>
+				You will be redirected to a page where you can fill in some details about your project, and
+				proceed to the payment. You'll get an email with a link to join our project management
+				system where you can start adding more details about your project, as well as your requests.
+			</p>
+			<p>
+				We will reach out to you by email <strong>in the next 12 hours</strong> following your payment
+				to confirm your subscription.
+			</p>
+		</svelte:fragment>
+	</FaqItem>
 </div>
