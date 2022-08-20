@@ -3,8 +3,8 @@
 	export let url: string;
 </script>
 
-<div class="bg-light-cyan p-8 space-y-4 rounded-2xl sm:p-12 shadow-xl">
+<div class="p-8 space-y-4 rounded-2xl shadow-xl sm:p-12 bg-light-cyan">
 	<h3 class="text-2xl sm:text-3xl">{title}</h3>
 	<slot name="description" />
-	<a href={url} class="default flex font-bold text-lg">Read more about the project &rarr;</a>
+	<a href={url} class="flex text-lg font-bold default">Read more about the project &rarr;</a>
 </div>
