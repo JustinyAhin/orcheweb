@@ -3,13 +3,13 @@
 </script>
 
 <details class="p-8 space-y-4 border border-gray-400 cursor-pointer">
-	<summary class="flex justify-between items-center gap-2">
+	<summary class="flex gap-2 justify-between items-center">
 		<h3 class="text-2xl sm:text-3xl">
 			<slot name="question" />
 		</h3>
 		<svelte:component this={PlusIcon} />
 	</summary>
-	<div class="answer space-y-2">
+	<div class="space-y-2 answer">
 		<slot name="answer" />
 	</div>
 </details>

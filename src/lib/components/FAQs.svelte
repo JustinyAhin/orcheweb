@@ -55,7 +55,10 @@
 				like.
 			</p>
 			<p>
-				You can check some cases studies of projects we've worked on <a href="/" class="default">here</a> and
+				You can check some cases studies of projects we've worked on <a href="/" class="default"
+					>here</a
+				>
+				and
 				<a href="/" class="default">here</a>
 				to get an idea of what you can expect from us.
 			</p>

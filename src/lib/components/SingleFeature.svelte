@@ -9,7 +9,7 @@
 	<svelte:component this={iconReference} />
 
 	<h4 class="text-3xl">{title}</h4>
-	<div class="description space-y-2">
+	<div class="space-y-2 description">
 		<slot name="description" />
 	</div>
 </div>
