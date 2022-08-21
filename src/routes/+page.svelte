@@ -102,11 +102,14 @@
 			</div>
 			<div class="flex flex-col gap-8 justify-center p-8 sm:p-16 basis-6/12">
 				<p class="text-2xl">
-					I had the opportunity to work with Justin on a project and boy was I impressed.
+					I've worked with several devs in the past, and Justin is by far the best. He passionately
+					took on my project from start to end within the deadline and even went extra mile to do
+					things that were not on the scope of work.
 				</p>
 				<p class="text-2xl">
-					Justin is very professional and transparent in his work. He even went beyond the scope of
-					work and did stuff that he thought could benefit me.
+					The website he built for me is 10x faster than what I had, responsive on all front, and
+					flawless SEO-wise. He regularly helps me keep the site performing and I strongly recommend
+					him.
 				</p>
 				<div class="space-y-1">
 					<h3>Ernest Bio Bogore</h3>
