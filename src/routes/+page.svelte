@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Head from '$lib/components/Head.svelte';
+
 	import SingleCaseStudy from '$lib/components/SingleCaseStudy.svelte';
 	import Features from '$lib/components/Features.svelte';
 	import FaQs from '$lib/components/FAQs.svelte';
@@ -116,9 +118,5 @@
 </section>
 
 <svelte:head>
-	<title>OrcheWeb</title>
-	<meta
-		name="description"
-		content="Subscription-based web development services for coachs and consulting businesses."
-	/>
+	<Head isHome />
 </svelte:head>

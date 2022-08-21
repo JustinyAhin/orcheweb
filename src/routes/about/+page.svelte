@@ -1,3 +1,10 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+	import Head from '$lib/components/Head.svelte';
+
+	const url = $page.url.href;
+</script>
+
 <section class="py-32 space-y-8 main-container">
 	<header>
 		<h1>OrcheWeb is a one person business</h1>
@@ -36,6 +43,5 @@
 </section>
 
 <svelte:head>
-	<title>About | OrcheWeb</title>
-	<meta name="description" content="About OrcheWeb and the people behind it" />
+	<Head pageTitle="About" description="About OrcheWeb and the people behind it" canonical={url} />
 </svelte:head>

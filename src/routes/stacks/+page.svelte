@@ -1,6 +1,16 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+	import Head from '$lib/components/Head.svelte';
+
+	const url = $page.url.href;
+</script>
+
 <svelte:head>
-	<title>Stacks | OrcheWeb</title>
-	<meta name="description" content="Technologies we use at OrcheWeb to build websites." />
+	<Head
+		pageTitle="Stacks"
+		description="Technologies we use at OrcheWeb to build websites"
+		canonical={url}
+	/>
 </svelte:head>
 
 <section class="py-32 space-y-8 main-container">
