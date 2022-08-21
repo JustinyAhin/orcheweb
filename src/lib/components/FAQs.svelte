@@ -54,14 +54,6 @@
 				newsletter to a website, our subscription service will definitely be something you will
 				like.
 			</p>
-			<p>
-				You can check some cases studies of projects we've worked on <a href="/" class="default"
-					>here</a
-				>
-				and
-				<a href="/" class="default">here</a>
-				to get an idea of what you can expect from us.
-			</p>
 		</svelte:fragment>
 	</FaqItem>
 
