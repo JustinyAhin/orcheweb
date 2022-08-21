@@ -60,7 +60,11 @@
 			</p>
 		</div>
 
-		<a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-24G80527LX011272TMMBB3EY" class="action-default text-light-cyan bg-jungle-green shadow-dark" target="_blank">Get Started</a>
+		<a
+			href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-24G80527LX011272TMMBB3EY"
+			class="action-default text-light-cyan bg-jungle-green shadow-dark"
+			target="_blank">Get Started</a
+		>
 	</div>
 
 	<div class="space-y-8">
@@ -74,7 +78,11 @@
 
 	<FaQs />
 
-	<a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-24G80527LX011272TMMBB3EY" class="action-default text-light-cyan bg-jungle-green shadow-dark" target="_blank">Get Started</a>
+	<a
+		href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-24G80527LX011272TMMBB3EY"
+		class="action-default text-light-cyan bg-jungle-green shadow-dark"
+		target="_blank">Get Started</a
+	>
 </section>
 
 <section class="py-32 bg-light-cyan text-jungle-green" id="textimonials">
