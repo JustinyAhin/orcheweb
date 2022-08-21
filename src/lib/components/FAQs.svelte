@@ -98,6 +98,10 @@
 				Our tech stack really depends on the type of website you are looking to build, its size, and
 				other specific requirements you might have.
 			</p>
+
+			<p>
+				Check out our <a href="/stacks" class="default">tech stacks page</a> to see what we use and why.
+			</p>
 		</svelte:fragment>
 	</FaqItem>
 
