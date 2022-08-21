@@ -43,7 +43,7 @@
 	<div class="space-y-4">
 		<h2>
 			Unique pricing plan tailored to your needs for <span class="text-radical-red"
-				>$2500 a month</span
+				>$1000 a month</span
 			>
 		</h2>
 
