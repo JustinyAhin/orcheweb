@@ -61,7 +61,7 @@
 		<svelte:fragment slot="question">Will you also design my website?</svelte:fragment>
 		<svelte:fragment slot="answer">
 			<p>
-				We do not provide UI design services. That means that in most case, you will have to come
+				We do not provide UI design services. That means that in most cases, you will have to come
 				with your own design that we will implemente.
 			</p>
 			<p>
