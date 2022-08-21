@@ -62,11 +62,11 @@
 		<svelte:fragment slot="answer">
 			<p>
 				We do not provide UI design services. That means that in most cases, you will have to come
-				with your own design that we will implemente.
+				with your own design that we will implement.
 			</p>
 			<p>
 				However, we can discuss about this if you haven't thought about it yet, an we will be happy
-				to recommend to you some excellent UI desginers we have been working with.
+				to recommend to you some excellent UI designers we have been working with.
 			</p>
 		</svelte:fragment>
 	</FaqItem>
@@ -103,9 +103,9 @@
 		>
 		<svelte:fragment slot="answer">
 			<p>
-				You will be redirected to a page where you proceed to the payment. You'll get an email with
-				a link to join our project management system where you can start adding more details about
-				your project, as well as your requests.
+				You will be redirected to a page where you can proceed to the payment. You'll get right
+				after an email with a link to join our project management system where you can start adding
+				more details about your project, as well as your requests.
 			</p>
 			<p>
 				We will reach out to you by email <strong>in the next 12 hours</strong> following your payment
@@ -118,7 +118,7 @@
 		<svelte:fragment slot="question">How can I pay for the subscription?</svelte:fragment>
 		<svelte:fragment slot="answer">
 			<p>
-				At the moment, we accept payments through PayPal. You need to have a PayPal account in order
+				At the moment, we accept payments through PayPal. You will need to have a PayPal account in order
 				to be able to pay. We plan to expand that to other payments systems like Stripe soon.
 			</p>
 		</svelte:fragment>
