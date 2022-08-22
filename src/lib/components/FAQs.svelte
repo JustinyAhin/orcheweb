@@ -118,8 +118,8 @@
 		<svelte:fragment slot="question">How can I pay for the subscription?</svelte:fragment>
 		<svelte:fragment slot="answer">
 			<p>
-				At the moment, we accept payments through PayPal. You will need to have a PayPal account in order
-				to be able to pay. We plan to expand that to other payments systems like Stripe soon.
+				At the moment, we accept payments through PayPal. You will need to have a PayPal account in
+				order to be able to pay. We plan to expand that to other payments systems like Stripe soon.
 			</p>
 		</svelte:fragment>
 	</FaqItem>
