@@ -27,7 +27,7 @@
 		<p>
 			Depending on the level of control you need on your website, how frequently you need to update
 			it, and the integrations you want to add, we will use either a static site generator,
-			sometimes coupled with a headless CMS, or a full-fledged CMS like WordPress.
+			sometimes coupled with a headless CMS, or a full-stack framework.
 		</p>
 
 		<h2>Static website generator</h2>
@@ -59,23 +59,6 @@
 			full-stack framework is a great way to do this. We've worked many times with
 			<a href="https://kit.svelte.dev" class="default">SvelteKit</a>, and we like to use it for all
 			our projects.
-		</p>
-
-		<h2>WordPress</h2>
-
-		<p>
-			We've worked for many years with WordPress. Our founder, Justin, has been a <a
-				href="https://profiles.wordpress.org/justinahinon"
-				class="default">WordPress Core Contributor</a
-			>
-			for several years, and has worked for some well-know companies in the WordPress ecosystem like
-			<strong>Yoast</strong> or <strong>Awesome Motive</strong>.
-		</p>
-
-		<p>
-			Some people prefer to stick to a stack like WordPress, because it's one of the most popular
-			tool for building websites. And it can be a great choice for very advanced uses cases like big
-			ecommerce or forums.
 		</p>
 	</div>
 </section>

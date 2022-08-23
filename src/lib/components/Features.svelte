@@ -17,8 +17,8 @@
 				experience to your users and customers.
 			</p>
 			<p>
-				We specialize in CMS solutions with WordPress, and static websites with the ability to add
-				custom integrations, headless CMS, and more.
+				We specialize in static websites solutions coupled with custom integrations, headless CMS
+				and more.
 			</p>
 		</svelte:fragment>
 	</SingleFeature>
