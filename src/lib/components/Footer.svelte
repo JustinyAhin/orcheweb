@@ -14,7 +14,7 @@
 		</p>
 
 		<nav class="flex gap-8">
-			<a href="mailto:hello@orcheweb.com" class="text-xl font-bold hover:underline">Email</a>
+			<a href="mailto:justin@orcheweb.com" class="text-xl font-bold hover:underline">Email</a>
 			<a href="https://twitter.com/iamsegbedji" target="_blank">Twitter</a>
 			<a href="https://www.linkedin.com/in/justinahinon" target="_blank">LinkedIn</a>
 		</nav>

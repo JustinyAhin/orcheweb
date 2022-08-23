@@ -4,7 +4,7 @@
 
 		<nav class="flex gap-8">
 			<a href="/about" class="text-xl font-bold hover:underline">About</a>
-			<a href="mailto:hello@orcheweb.com" class="text-xl font-bold hover:underline">Contact</a>
+			<a href="mailto:justin@orcheweb.com" class="text-xl font-bold hover:underline">Contact</a>
 		</nav>
 	</div>
 </header>
