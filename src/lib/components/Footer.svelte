@@ -2,7 +2,7 @@
 	<div class="main-container">
 		<a href="/" class="text-3xl font-bold">OrcheWeb</a>
 		<p class="lg:w-4/12">
-			We create finely crafted websites for coaches and consulting businesses.
+			We create finely crafted marketing sites for startup founders.
 		</p>
 	</div>
 

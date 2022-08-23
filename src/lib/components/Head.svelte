@@ -1,9 +1,9 @@
 <script lang="ts">
 	export let siteName: string = 'OrcheWeb';
 	export let pageTitle: string = 'OrcheWeb';
-	export let slogan: string = 'Finely crafted custom websites';
+	export let slogan: string = 'Finely crafted marketing sites for startup founders';
 	export let description: string =
-		'Subscription-based web development services for coachs and consulting businesses';
+		'Finely crafted marketing sites for startup founders';
 	export let isHome: boolean = false;
 
 	export let canonical: string = 'https://www.orcheweb.com/';
@@ -22,7 +22,7 @@
 <meta property="og:description" content={description} />
 <meta
 	property="og:image"
-	content="https://res.cloudinary.com/orcheweb/image/upload/v1661102583/orcheweb/orcheweb-og-image_ktsgr8.jpg"
+	content="https://res.cloudinary.com/orcheweb/image/upload/v1661293558/orcheweb/orcheweb-og-image_eaqfto.jpg"
 />
 
 <!-- Open Graph / Twitter -->
@@ -32,5 +32,5 @@
 <meta property="twitter:description" content={description} />
 <meta
 	property="twitter:image"
-	content="https://res.cloudinary.com/orcheweb/image/upload/v1661102583/orcheweb/orcheweb-og-image_ktsgr8.jpg"
+	content="https://res.cloudinary.com/orcheweb/image/upload/v1661293558/orcheweb/orcheweb-og-image_eaqfto.jpg"
 />
