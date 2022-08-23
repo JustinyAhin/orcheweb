@@ -3,7 +3,7 @@
 	export let pageTitle: string = 'OrcheWeb';
 	export let slogan: string = 'Finely crafted marketing sites for startup founders';
 	export let description: string =
-		'Finely crafted marketing sites for startup founders';
+		'For a fixed monthly fee, we create a custom marketing website for your startup, that will help you grow your business. No surprises, no hidden fees. Cancel anytime.';
 	export let isHome: boolean = false;
 
 	export let canonical: string = 'https://www.orcheweb.com/';
