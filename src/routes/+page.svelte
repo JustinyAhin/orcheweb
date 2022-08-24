@@ -14,7 +14,7 @@
 			</h1>
 			<p class="text-2xl sm:w-8/12 text-light-cyan">
 				For a fixed monthly fee, we create a <strong>custom marketing website</strong> for your startup
-				to grow your business. No hidden fees. Cancel anytime.
+				to grow your business.
 			</p>
 			<p class="text-xl font-bold sm:w-8/12 text-light-cyan">
 				No surprises, no hidden fees. Cancel anytime.
