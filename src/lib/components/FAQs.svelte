@@ -22,7 +22,7 @@
 	});
 </script>
 
-<div class="space-y-8">
+<div class="space-y-6">
 	<FaqItem>
 		<svelte:fragment slot="question">How "unlimited" is our plan?</svelte:fragment>
 		<svelte:fragment slot="answer">
