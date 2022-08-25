@@ -44,12 +44,6 @@
 		>
 		<svelte:fragment slot="answer">
 			<p>
-				We advertised ourselves as a service for startups founders. That's because over the years,
-				we've worked on several projects within this niche, and created some patterns and best
-				practises that we can apply to your project. If you fall into this category, our services
-				are a good fit for you.
-			</p>
-			<p>
 				If you've also experienced having to pay enormous amounts for things like adding a
 				newsletter to a website, our subscription service will definitely be something you will
 				like.

@@ -28,7 +28,7 @@
 			documentation, testing, and accessibility for the CMS.
 		</p>
 		<p>
-			I founded OrcheWeb because I've started noticing a pattern in what people have been looking
+			I started OrcheWeb because I've started noticing a pattern in what people have been looking
 			for when they hire me as a developer to work on their projects. Things like a fast, responsive
 			and performant website, search engine optimizations, third parties integrations (like
 			newsletter, contact form, etc...) were regularly part of the base requirements for any project

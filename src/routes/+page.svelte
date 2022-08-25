@@ -9,12 +9,9 @@
 <section class="bg-jungle-green">
 	<div class="main-container">
 		<div class="pt-16 pb-32 space-y-6">
-			<h1 class="sm:w-10/12 text-light-cyan">
-				Finely crafted marketing sites for startup founders.
-			</h1>
+			<h1 class="sm:w-10/12 text-light-cyan">Unlimited Custom Web Development.</h1>
 			<p class="text-2xl sm:w-8/12 text-light-cyan">
-				For a fixed monthly fee, we create a <strong>custom marketing website</strong> for your startup
-				to grow your business.
+				A unique fixed monthly subscription service to cover all your web development needs.
 			</p>
 			<p class="text-xl font-bold opacity-75 sm:w-8/12 text-light-cyan">
 				No surprises, no hidden fees. Cancel anytime.
@@ -28,7 +25,7 @@
 </section>
 
 <section class="py-16 pt-32 space-y-16 main-container" id="cases-studies">
-	<h2>Check a curated list of what we've been working on recently</h2>
+	<h2>Take a loot at a curated list of what we've been working on recently</h2>
 
 	<SingleCaseStudy
 		title="How we rebuilt a new web experience for Nerdy Joe"
@@ -38,7 +35,7 @@
 			<p>
 				Nerdy Joe is a email marketing company that specializes in creating high-quality email copy
 				for businesses. We have worked with them to create a brand new website that reflects the
-				company's new brand.
+				company's new brand and converts more customers.
 			</p>
 		</svelte:fragment>
 	</SingleCaseStudy>
@@ -47,7 +44,7 @@
 <section class="py-16 space-y-16 main-container" id="pricing">
 	<div class="space-y-4">
 		<h2>
-			Unique pricing plan at <span class="text-ruby-red">$1300/month</span>
+			Unique pricing plan at <span class="text-ruby-red">$1600/month</span>
 		</h2>
 
 		<div class="space-y-4 sm:w-9/12">

@@ -16,7 +16,7 @@ export const GET: RequestHandler = () => {
         </url>
         <url>
             <loc>https://www.orcheweb.com/about/</loc>
-            <lastmod>2022-08-22</lastmod>
+            <lastmod>2022-08-25</lastmod>
             <changefreq>weekly</changefreq>
         </url>
         <url>

@@ -1,9 +1,9 @@
 <script lang="ts">
 	export let siteName: string = 'OrcheWeb';
 	export let pageTitle: string = 'OrcheWeb';
-	export let slogan: string = 'Finely crafted marketing sites for startup founders';
+	export let slogan: string = 'Unlimited Custom Web Development';
 	export let description: string =
-		'For a fixed monthly fee, we create a custom marketing website for your startup, to grow your business. No hidden fees. Cancel anytime.';
+		'A unique fixed monthly subscription service to cover all your web development needs. No hidden fees. Cancel anytime.';
 	export let isHome: boolean = false;
 
 	export let canonical: string = 'https://www.orcheweb.com/';

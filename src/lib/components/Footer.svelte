@@ -1,8 +1,8 @@
 <footer class="py-24 bg-jungle-green text-light-cyan">
 	<div class="main-container">
 		<a href="/" class="text-3xl font-bold">OrcheWeb</a>
-		<p class="opacity-75 lg:w-4/12">
-			We create finely crafted marketing sites for startup founders.
+		<p class="opacity-75 lg:w-5/12">
+			A unique fixed monthly subscription service to cover all your web development needs.
 		</p>
 	</div>
 
