@@ -29,7 +29,7 @@
 @layer components {
 	/* Links */
 	a.default {
-		@apply text-radical-red font-bold hover:underline;
+		@apply text-ruby-red font-bold hover:underline;
 	}
 
 	/* Actions */
@@ -53,10 +53,10 @@
 
 	/* Misc */
 	.feature svg {
-		@apply stroke-radical-red h-16 w-16;
+		@apply stroke-ruby-red h-16 w-16;
 	}
 
 	summary svg {
-		@apply stroke-radical-red stroke-[px];
+		@apply stroke-ruby-red stroke-[px];
 	}
 }

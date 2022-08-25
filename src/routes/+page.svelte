@@ -47,7 +47,7 @@
 <section class="py-16 space-y-16 main-container" id="pricing">
 	<div class="space-y-4">
 		<h2>
-			Unique pricing plan at <span class="text-radical-red">$1300/month</span>
+			Unique pricing plan at <span class="text-ruby-red">$1300/month</span>
 		</h2>
 
 		<div class="space-y-4 sm:w-9/12">
