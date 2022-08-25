@@ -44,6 +44,11 @@
 		>
 		<svelte:fragment slot="answer">
 			<p>
+				If you have ever struggled to find a great developer for your project, or the one you found
+				never deliver the quality you need, or following the deadlines, then you should definitely
+				consider our services.
+			</p>
+			<p>
 				If you've also experienced having to pay enormous amounts for things like adding a
 				newsletter to a website, our subscription service will definitely be something you will
 				like.

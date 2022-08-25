@@ -16,6 +16,6 @@
 
 <style>
 	.answer :global(p) {
-		@apply text-lg text-gray-600;
+		@apply text-lg text-gray-700;
 	}
 </style>
