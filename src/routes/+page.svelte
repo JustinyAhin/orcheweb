@@ -16,7 +16,7 @@
 				For a fixed monthly fee, we create a <strong>custom marketing website</strong> for your startup
 				to grow your business.
 			</p>
-			<p class="text-xl font-bold sm:w-8/12 text-light-cyan">
+			<p class="text-xl font-bold sm:w-8/12 text-light-cyan opacity-75">
 				No surprises, no hidden fees. Cancel anytime.
 			</p>
 

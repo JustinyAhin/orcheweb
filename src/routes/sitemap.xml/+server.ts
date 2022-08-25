@@ -11,18 +11,23 @@ export const GET: RequestHandler = () => {
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         <url>
             <loc>https://www.orcheweb.com/</loc>
-            <lastmod>2022-08-22</lastmod>
+            <lastmod>2022-08-25</lastmod>
             <changefreq>weekly</changefreq>
         </url>
         <url>
             <loc>https://www.orcheweb.com/about/</loc>
             <lastmod>2022-08-22</lastmod>
-            <changefreq>monthly</changefreq>
+            <changefreq>weekly</changefreq>
         </url>
         <url>
             <loc>https://www.orcheweb.com/stacks/</loc>
             <lastmod>2022-08-22</lastmod>
-            <changefreq>monthly</changefreq>
+            <changefreq>weekly</changefreq>
+        </url>
+        <url>
+            <loc>https://www.orcheweb.com/privacy/</loc>
+            <lastmod>2022-08-25</lastmod>
+            <changefreq>weekly</changefreq>
         </url>
     </urlset>`;
 
