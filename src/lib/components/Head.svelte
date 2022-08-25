@@ -22,7 +22,7 @@
 <meta property="og:description" content={description} />
 <meta
 	property="og:image"
-	content="https://res.cloudinary.com/orcheweb/image/upload/v1661293558/orcheweb/orcheweb-og-image_eaqfto.jpg"
+	content="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
 />
 
 <!-- Open Graph / Twitter -->
@@ -32,5 +32,5 @@
 <meta property="twitter:description" content={description} />
 <meta
 	property="twitter:image"
-	content="https://res.cloudinary.com/orcheweb/image/upload/v1661293558/orcheweb/orcheweb-og-image_eaqfto.jpg"
+	content="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
 />
