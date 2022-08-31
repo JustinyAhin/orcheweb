@@ -11,7 +11,7 @@ export const GET: RequestHandler = () => {
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         <url>
             <loc>https://www.orcheweb.com/</loc>
-            <lastmod>2022-08-25</lastmod>
+            <lastmod>2022-08-31</lastmod>
             <changefreq>weekly</changefreq>
         </url>
         <url>

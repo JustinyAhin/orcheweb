@@ -38,14 +38,13 @@
 		</svelte:fragment>
 	</SingleFeature>
 
-	<SingleFeature iconReference={LightningIcon} title="Performance by default">
+	<SingleFeature iconReference={LightningIcon} title="Websites that don't crash">
 		<svelte:fragment slot="description">
 			<p>
-				We believe that every website should be as fast as possible. Users and customers should be
-				able to experience the best possible experience when navigation through your website. That's
-				why we take very seriously the performance of the websites we create.
+				You want your website to be fast and not crash, right? Then you want a website designed by
+				me. I build websites that are both performant and beautifully designed so your users stay
+				around for longer.
 			</p>
-			<p>And we will make sure that your website is not the exception to this rule.</p>
 		</svelte:fragment>
 	</SingleFeature>
 
@@ -65,9 +64,9 @@
 	<SingleFeature iconReference={CashIcon} title="Fixed and predictable fee">
 		<svelte:fragment slot="description">
 			<p>
-				We charge a fixed fee for each project. This fee is always the same every month, regardless
-				of the project size, type of service or the number of revisions you request, as long as the
-				project is in the scope of our services.
+				You know what you're going to pay each month, and you don't have to worry about any
+				surprises or hidden fees. You can cancel anytime without penalty. Simplify your life with a
+				predictable bill every month.
 			</p>
 			<p>
 				Read more about that in our <a href="/#faqs" class="default">FAQs below.</a>

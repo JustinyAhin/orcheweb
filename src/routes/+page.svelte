@@ -9,7 +9,9 @@
 <section class="bg-jungle-green">
 	<div class="main-container">
 		<div class="pt-16 pb-32 space-y-6">
-			<h1 class="sm:w-10/12 text-light-cyan">Unlimited Custom Web Development.</h1>
+			<h1 class="sm:w-10/12 text-light-cyan">
+				Get your website done with less headache and more success.
+			</h1>
 			<p class="text-2xl sm:w-8/12 text-light-cyan">
 				A unique fixed monthly subscription service to cover all your web development needs.
 			</p>
@@ -44,7 +46,7 @@
 <section class="py-16 space-y-16 main-container" id="pricing">
 	<div class="space-y-4">
 		<h2>
-			Unique pricing plan at <span class="text-ruby-red">$2600/month</span>
+			Unique pricing plan at <span class="text-ruby-red">$3500/month</span>
 		</h2>
 
 		<div class="space-y-4 sm:w-9/12">
