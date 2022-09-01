@@ -37,20 +37,24 @@
 </section>
 
 <section class="py-16 pt-32 space-y-16 main-container" id="cases-studies">
-	<h2>Take a loot at a curated list of what we've been working on recently</h2>
+	<h2>Take a loot at what we've been working on recently</h2>
 
-	<SingleCaseStudy
-		title="How we rebuilt a new web experience for Nerdy Joe"
-		url="https://www.nerdyjoe.com"
-	>
-		<svelte:fragment slot="description">
-			<p>
-				Nerdy Joe is a email marketing company that specializes in creating high-quality email copy
-				for businesses. We have worked with them to create a brand new website that reflects the
-				company's new brand and converts more customers.
-			</p>
-		</svelte:fragment>
-	</SingleCaseStudy>
+	<div>
+		<SingleCaseStudy
+			title="How we rebuilt a new web experience for Nerdy Joe"
+			url="https://www.nerdyjoe.com"
+			coverUrl="https://res.cloudinary.com/orcheweb/image/upload/v1662038112/orcheweb/nerdy-joe-hero-screenshot_rkrhx3.webp"
+			coverAlt="Nerdy Joe hero screenshot"
+		>
+			<svelte:fragment slot="description">
+				<p>
+					Nerdy Joe is a email marketing company that specializes in creating high-quality email
+					copy for businesses. We have worked with them to create a brand new website that reflects
+					the company's new brand and converts more customers.
+				</p>
+			</svelte:fragment>
+		</SingleCaseStudy>
+	</div>
 </section>
 
 <section class="py-16 space-y-16 main-container" id="pricing">
