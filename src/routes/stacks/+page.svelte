@@ -1,18 +1,15 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import Head from '$lib/components/Head.svelte';
-
-	const url = $page.url.href;
+	import { Head } from 'sveltecity';
 </script>
 
-<svelte:head>
-	<Head
-		pageTitle="Stacks"
-		description="Technologies we use at OrcheWeb to build websites"
-		canonical={url}
-	/>
-</svelte:head>
-
+<Head
+	siteName="OrcheWeb"
+	siteSlogan="Unlimited Custom Web Development"
+	pageTitle="Stacks"
+	pageDescription="Technologies we use at OrcheWeb to build websites"
+	ogImagePath="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
+	faviconPath="/favicon.icon"
+/>
 <section class="py-32 space-y-8 main-container">
 	<h1>Technologies we use at OrcheWeb to build websites</h1>
 

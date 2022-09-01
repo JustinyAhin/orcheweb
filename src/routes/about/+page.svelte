@@ -1,9 +1,15 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import Head from '$lib/components/Head.svelte';
-
-	const url = $page.url.href;
+	import { Head } from 'sveltecity';
 </script>
+
+<Head
+	siteName="OrcheWeb"
+	siteSlogan="Unlimited Custom Web Development"
+	pageTitle="About"
+	pageDescription="About OrcheWeb and the people behind it"
+	ogImagePath="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
+	faviconPath="/favicon.icon"
+/>
 
 <section class="py-32 space-y-8 main-container">
 	<header>
@@ -41,7 +47,3 @@
 		</p>
 	</div>
 </section>
-
-<svelte:head>
-	<Head pageTitle="About" description="About OrcheWeb and the people behind it" canonical={url} />
-</svelte:head>

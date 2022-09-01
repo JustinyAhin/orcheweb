@@ -1,10 +1,20 @@
 <script lang="ts">
-	import Head from '$lib/components/Head.svelte';
+	import { Head } from 'sveltecity';
 
 	import SingleCaseStudy from '$lib/components/SingleCaseStudy.svelte';
 	import Features from '$lib/components/Features.svelte';
 	import FaQs from '$lib/components/FAQs.svelte';
 </script>
+
+<Head
+	isHome
+	siteName="OrcheWeb"
+	siteSlogan="Unlimited Custom Web Development"
+	pageTitle="OrcheWeb"
+	pageDescription="A unique fixed monthly subscription service to cover all your web development needs. No hidden fees. Cancel anytime."
+	ogImagePath="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
+	faviconPath="/favicon.icon"
+/>
 
 <section class="bg-jungle-green">
 	<div class="main-container">
@@ -118,7 +128,3 @@
 		</div>
 	</div>
 </section>
-
-<svelte:head>
-	<Head isHome />
-</svelte:head>
