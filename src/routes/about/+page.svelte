@@ -1,14 +1,13 @@
 <script lang="ts">
-	import { Head } from 'sveltecity';
+	import { PageHead } from 'sveltecity';
 </script>
 
-<Head
+<PageHead
 	siteName="OrcheWeb"
 	siteSlogan="Unlimited Custom Web Development"
 	pageTitle="About"
 	pageDescription="About OrcheWeb and the people behind it"
-	ogImagePath="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
-	faviconPath="/favicon.icon"
+	pageOgImagePath="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
 />
 
 <section class="py-32 space-y-8 main-container">
