@@ -3,11 +3,30 @@ import Base from "../layouts/Base.astro";
 ---
 
 <Base
+  isHome
   pageTitle="OrcheWeb"
   pageDescription="A unique fixed monthly subscription service to cover all your web development needs. No hidden fees. Cancel anytime."
 >
-  <h1>Hello World</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem!
-  </p>
+  <section class="bg-jungle-green">
+    <div class="main-container">
+      <div class="pt-16 pb-32 space-y-6">
+        <h1 class="sm:w-10/12 text-light-cyan">
+          Get your website done with less headache and more success.
+        </h1>
+        <p class="text-2xl sm:w-8/12 text-light-cyan">
+          A unique fixed monthly subscription service to cover all your web
+          development needs.
+        </p>
+        <p class="text-xl font-bold opacity-75 sm:w-8/12 text-light-cyan">
+          No surprises, no hidden fees. Cancel anytime.
+        </p>
+
+        <a
+          href="#pricing"
+          class="action-default bg-light-cyan text-jungle-green shadow-default"
+          >See Pricing</a
+        >
+      </div>
+    </div>
+  </section>
 </Base>
