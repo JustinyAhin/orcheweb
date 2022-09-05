@@ -1,70 +1,82 @@
 ---
 import "../app.css";
+
+import Head from "../components/Head.astro";
+
+export interface Props {
+    pageTitle: string;
+    pageDescription: string;
+}
+
+const { pageTitle, pageDescription } = Astro.props;
 ---
 
 <html lang="en">
-    <head>
-        <!-- Global Metadata -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="/favicon.ico"
-        />
+    <Head pageTitle={pageTitle} pageDescription={pageDescription} />
 
-        <!-- Base Metadata -->
-        <title>OrcheWeb - Unlimited Custom Web Development</title>
-        <meta
-            name="description"
-            content="A unique fixed monthly subscription service to cover all your web development needs. No hidden fees. Cancel anytime."
-        />
-        <link rel="canonical" href="https://www.orcheweb.com/" />
+    <header class="py-8 bg-jungle-green text-light-cyan">
+        <div class="flex justify-between main-container">
+            <a href="/" class="text-2xl font-bold hover:underline">OrcheWeb</a>
 
-        <!-- OG Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.orcheweb.com/" />
-        <meta property="og:title" content="OrcheWeb" />
-        <meta
-            property="og:description"
-            content="A unique fixed monthly subscription service to cover all your web development needs. No hidden fees. Cancel anytime."
-        />
-        <meta
-            property="og:image"
-            content="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
-        />
+            <nav class="flex gap-8">
+                <a href="/about" class="text-xl font-bold hover:underline"
+                    >About</a
+                >
+                <a
+                    href="mailto:justin@orcheweb.com"
+                    class="text-xl font-bold hover:underline">Contact</a
+                >
+            </nav>
+        </div>
+    </header>
 
-        <!-- OG Twitter -->
-        <meta property="twitter:card" content="summary_large_image" /><meta
-            property="twitter:url"
-            content="https://www.orcheweb.com/"
-        />
-        <meta property="twitter:title" content="OrcheWeb" /><meta
-            property="twitter:description"
-            content="A unique fixed monthly subscription service to cover all your web development needs. No hidden fees. Cancel anytime."
-        />
-        <meta
-            property="twitter:imagee"
-            content="https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png"
-        />
-
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin=""
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
-        />
-
-        <!-- Splitbee Analytics -->
-        <script data-respect-dnt async src="https://cdn.splitbee.io/sb.js"
-        ></script>
-    </head>
     <body class="text-gray-800 font-work-sans">
         <slot />
     </body>
+
+    <footer class="py-24 bg-jungle-green text-light-cyan">
+        <div class="main-container">
+            <a href="/" class="text-3xl font-bold">OrcheWeb</a>
+            <p class="opacity-75 lg:w-5/12">
+                A unique fixed monthly subscription service to cover all your
+                web development needs.
+            </p>
+        </div>
+
+        <div class="pt-8 space-y-2 main-container">
+            <p class="text-2xl font-bold">Useful links</p>
+            <nav class="flex flex-col">
+                <a href="/stacks">Our tech stack</a>
+                <a href="/privacy">Privacy Policy</a>
+            </nav>
+        </div>
+
+        <div class="pt-8 space-y-2 main-container">
+            <p class="text-base">
+                Built with 🤍 by <a
+                    href="https://segbedji.com"
+                    class="font-bold hover:underline">Justin Ahinon</a
+                >
+            </p>
+
+            <nav class="flex gap-8">
+                <a href="mailto:justin@orcheweb.com">Email</a>
+                <a href="https://twitter.com/iamsegbedji" target="_blank"
+                    >Twitter</a
+                >
+                <a
+                    href="https://www.linkedin.com/in/justinahinon"
+                    target="_blank">LinkedIn</a
+                >
+            </nav>
+        </div>
+    </footer>
 </html>
+
+
+<style>
+    footer a {
+        @apply font-bold hover:underline opacity-75;
+
+    }
+</style>

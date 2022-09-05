@@ -1,0 +1,60 @@
+---
+export interface Props {
+    isHome?: boolean;
+    siteName?: string;
+    siteSlogan?: string;
+    pageTitle: string;
+    pageDescription: string;
+    pageOgImagePath?: string;
+}
+
+const {
+    isHome = false,
+    siteName = "OrcheWeb",
+    siteSlogan = "Unlimited Custom Web Development",
+    pageTitle,
+    pageDescription,
+    pageOgImagePath = "https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png",
+} = Astro.props;
+
+const canonicalUrl = Astro.url.href;
+---
+
+<head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Base Metadata -->
+    <title>
+        {isHome ? `${siteName} - ${siteSlogan}` : `${pageTitle} - ${siteName}`}
+    </title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- OG Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={pageOgImagePath} />
+
+    <!-- OG Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={pageTitle} />
+    <meta property="twitter:description" content={pageDescription} />
+    <meta property="twitter:imagee" content={pageOgImagePath} />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+    />
+
+    <!-- Splitbee Analytics -->
+    <script data-respect-dnt async src="https://cdn.splitbee.io/sb.js"></script>
+</head>
