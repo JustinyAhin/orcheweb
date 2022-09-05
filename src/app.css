@@ -3,56 +3,56 @@
 @tailwind utilities;
 
 @layer base {
-	/* Headings */
-	h1 {
-		@apply text-5xl sm:text-7xl font-bold;
-	}
+  /* Headings */
+  h1 {
+    @apply text-5xl sm:text-7xl font-bold;
+  }
 
-	h2 {
-		@apply text-4xl sm:text-6xl font-bold;
-	}
+  h2 {
+    @apply text-4xl sm:text-6xl font-bold;
+  }
 
-	h3 {
-		@apply text-3xl sm:text-5xl font-bold text-gray-700;
-	}
+  h3 {
+    @apply text-3xl sm:text-5xl font-bold text-gray-700;
+  }
 
-	h4 {
-		@apply text-2xl sm:text-4xl font-bold text-gray-700;
-	}
+  h4 {
+    @apply text-2xl sm:text-4xl font-bold text-gray-700;
+  }
 
-	/* Paragraphs */
-	p {
-		@apply text-xl;
-	}
+  /* Paragraphs */
+  p {
+    @apply text-xl;
+  }
 }
 
 @layer components {
-	/* Links */
-	a.default {
-		@apply text-ruby-red font-bold hover:underline;
-	}
+  /* Links */
+  a.default {
+    @apply text-ruby-red font-bold hover:underline;
+  }
 
-	/* Actions */
-	.action-default {
-		@apply flex py-4 px-6 text-xl font-bold w-fit;
-	}
+  /* Actions */
+  .action-default {
+    @apply flex py-4 px-6 text-xl font-bold w-fit;
+  }
 
-	/* Content */
-	.content {
-		@apply space-y-4;
-	}
+  /* Content */
+  .content {
+    @apply space-y-4;
+  }
 
-	.content ul {
-		@apply text-xl list-disc pl-8;
-	}
+  .content ul {
+    @apply text-xl list-disc pl-8;
+  }
 
-	/* Containers */
-	.main-container {
-		@apply mx-auto max-w-7xl px-6;
-	}
+  /* Containers */
+  .main-container {
+    @apply mx-auto max-w-7xl px-6;
+  }
 
-	/* Misc */
-	/* .feature svg {
+  /* Misc */
+  /* .feature svg {
 		@apply stroke-ruby-red h-16 w-16;
 	}
 
