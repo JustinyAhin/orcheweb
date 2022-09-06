@@ -1,4 +1,9 @@
 ---
+import { renderRichText } from "@storyblok/js";
+
+// Data
+import { caseStudies } from "../lib/data/site-data";
+
 import Base from "../layouts/Base.astro";
 ---
 
@@ -28,5 +33,45 @@ import Base from "../layouts/Base.astro";
         >
       </div>
     </div>
+  </section>
+
+  <section class="py-16 pt-32 space-y-16 main-container" id="cases-studies">
+    <h2>Take a loot at what we've been working on recently</h2>
+
+
+      {
+        caseStudies.map((caseStudy) => {
+          return (
+            <>
+              <div class="flex flex-col shadow-xl lg:flex-row bg-light-cyan">
+                <div>
+                  <img
+                    src={caseStudy.content.featuredImage.filename}
+                    alt={caseStudy.content.featuredImage.alt}
+                    class="w-auto h-full"
+                  />
+                </div>
+
+                <div class="p-8 space-y-4 sm:p-12 basis-6/12">
+                  <h3 class="text-2xl sm:text-3xl">
+                    {caseStudy.content.title}
+                  </h3>
+                  <div
+                    set:html={renderRichText(caseStudy.content.description)}
+                  />
+                  <a
+                    href={caseStudy.content.websiteUrl.url}
+                    class="flex text-lg font-bold link-default"
+                    target="_blank"
+                  >
+                    Check the website here &#8599;
+                  </a>
+                </div>
+              </div>
+            </>
+          );
+        })
+      }
+
   </section>
 </Base>

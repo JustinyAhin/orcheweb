@@ -1,4 +1,8 @@
 ---
+// Data
+import { settings } from '../lib/data/site-data';
+
+// Props
 export interface Props {
   isHome?: boolean;
   siteName?: string;
@@ -10,11 +14,11 @@ export interface Props {
 
 const {
   isHome = false,
-  siteName = "OrcheWeb",
-  siteSlogan = "Unlimited Custom Web Development",
+  siteName = settings.name,
+  siteSlogan = settings.slogan,
   pageTitle,
   pageDescription,
-  pageOgImagePath = "https://res.cloudinary.com/orcheweb/image/upload/v1661458534/orcheweb/orcheweb-og-image_ijhxub.png",
+  pageOgImagePath = "https://a.storyblok.com/f/172961/1500x850/766c9744f2/orcheweb-og-image.png",
 } = Astro.props;
 
 const canonicalUrl = Astro.url.href;
