@@ -28,7 +28,7 @@
 
 @layer components {
   /* Links */
-  a.default {
+  .link-default {
     @apply text-ruby-red font-bold hover:underline;
   }
 
@@ -52,11 +52,27 @@
   }
 
   /* Misc */
+  .feature .description p {
+    @apply text-lg text-gray-600;
+  }
+
+  .feature a {
+    @apply link-default;
+  }
+
   .feature svg {
     @apply stroke-ruby-red h-16 w-16;
   }
 
   summary svg {
     @apply stroke-ruby-red stroke-[px];
+  }
+
+  details .answer p {
+    @apply text-lg text-gray-700;
+  }
+
+  details .answer a {
+    @apply link-default;
   }
 }
