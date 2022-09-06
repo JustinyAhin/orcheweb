@@ -308,6 +308,8 @@ export type QueryType = {
   SettingsItems: Maybe<SettingsItems>;
   Space: Maybe<Space>;
   Tags: Maybe<Tags>;
+  TestimonialItem: Maybe<TestimonialItem>;
+  TestimonialItems: Maybe<TestimonialItems>;
 };
 
 
@@ -523,6 +525,44 @@ export type QueryTypeTagsArgs = {
   starts_with: InputMaybe<Scalars['String']>;
 };
 
+
+export type QueryTypeTestimonialItemArgs = {
+  find_by: InputMaybe<Scalars['String']>;
+  from_release: InputMaybe<Scalars['Int']>;
+  id: Scalars['ID'];
+  language: InputMaybe<Scalars['String']>;
+  resolve_links: InputMaybe<Scalars['String']>;
+  resolve_relations: InputMaybe<Scalars['String']>;
+};
+
+
+export type QueryTypeTestimonialItemsArgs = {
+  by_slugs: InputMaybe<Scalars['String']>;
+  by_uuids: InputMaybe<Scalars['String']>;
+  by_uuids_ordered: InputMaybe<Scalars['String']>;
+  excluding_fields: InputMaybe<Scalars['String']>;
+  excluding_ids: InputMaybe<Scalars['String']>;
+  excluding_slugs: InputMaybe<Scalars['String']>;
+  fallback_lang: InputMaybe<Scalars['String']>;
+  filter_query: InputMaybe<Scalars['JsonScalar']>;
+  filter_query_v2: InputMaybe<TestimonialFilterQuery>;
+  first_published_at_gt: InputMaybe<Scalars['String']>;
+  first_published_at_lt: InputMaybe<Scalars['String']>;
+  from_release: InputMaybe<Scalars['String']>;
+  is_startpage: InputMaybe<Scalars['String']>;
+  language: InputMaybe<Scalars['String']>;
+  page: InputMaybe<Scalars['Int']>;
+  per_page: InputMaybe<Scalars['Int']>;
+  published_at_gt: InputMaybe<Scalars['String']>;
+  published_at_lt: InputMaybe<Scalars['String']>;
+  resolve_links: InputMaybe<Scalars['String']>;
+  resolve_relations: InputMaybe<Scalars['String']>;
+  search_term: InputMaybe<Scalars['String']>;
+  sort_by: InputMaybe<Scalars['String']>;
+  starts_with: InputMaybe<Scalars['String']>;
+  with_tag: InputMaybe<Scalars['String']>;
+};
+
 export type RateLimit = {
   __typename?: 'RateLimit';
   maxCost: Scalars['Int'];
@@ -622,6 +662,56 @@ export type Tags = {
   items: Array<Tag>;
 };
 
+export type TestimonialComponent = {
+  __typename?: 'TestimonialComponent';
+  _editable: Maybe<Scalars['String']>;
+  _uid: Maybe<Scalars['String']>;
+  author_company: Maybe<Scalars['String']>;
+  author_name: Maybe<Scalars['String']>;
+  author_picture: Maybe<Asset>;
+  author_role: Maybe<Scalars['String']>;
+  component: Maybe<Scalars['String']>;
+  testimonial: Maybe<Scalars['JsonScalar']>;
+};
+
+export type TestimonialFilterQuery = {
+  author_company: InputMaybe<FilterQueryOperations>;
+  author_name: InputMaybe<FilterQueryOperations>;
+  author_role: InputMaybe<FilterQueryOperations>;
+};
+
+export type TestimonialItem = {
+  __typename?: 'TestimonialItem';
+  alternates: Maybe<Array<Maybe<Alternate>>>;
+  content: Maybe<TestimonialComponent>;
+  created_at: Maybe<Scalars['String']>;
+  default_full_slug: Maybe<Scalars['String']>;
+  first_published_at: Maybe<Scalars['String']>;
+  full_slug: Maybe<Scalars['String']>;
+  group_id: Maybe<Scalars['Int']>;
+  id: Maybe<Scalars['Int']>;
+  is_startpage: Maybe<Scalars['Boolean']>;
+  lang: Maybe<Scalars['String']>;
+  meta_data: Maybe<Scalars['JsonScalar']>;
+  name: Maybe<Scalars['String']>;
+  parent_id: Maybe<Scalars['Int']>;
+  path: Maybe<Scalars['String']>;
+  position: Maybe<Scalars['Int']>;
+  published_at: Maybe<Scalars['String']>;
+  release_id: Maybe<Scalars['Int']>;
+  slug: Maybe<Scalars['String']>;
+  sort_by_date: Maybe<Scalars['String']>;
+  tag_list: Maybe<Array<Maybe<Scalars['String']>>>;
+  translated_slugs: Maybe<Array<Maybe<TranslatedSlug>>>;
+  uuid: Maybe<Scalars['String']>;
+};
+
+export type TestimonialItems = {
+  __typename?: 'TestimonialItems';
+  items: Maybe<Array<Maybe<TestimonialItem>>>;
+  total: Maybe<Scalars['Int']>;
+};
+
 export type TranslatedSlug = {
   __typename?: 'TranslatedSlug';
   lang: Scalars['String'];
@@ -648,6 +738,11 @@ export type SiteSettingsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type SiteSettingsQuery = { __typename?: 'QueryType', SettingsItem: { __typename?: 'SettingsItem', id: number, content: { __typename?: 'SettingsComponent', name: string, slogan: string, email: string, url: { __typename?: 'Link', url: string } } } };
+
+export type TestimonialsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type TestimonialsQuery = { __typename?: 'QueryType', TestimonialItems: { __typename?: 'TestimonialItems', items: Array<{ __typename?: 'TestimonialItem', content: { __typename?: 'TestimonialComponent', author_name: string, author_role: string, author_company: string, testimonial: any, author_picture: { __typename?: 'Asset', filename: string, alt: string } } }> } };
 
 
 export const CaseStudiesDocument = gql`
@@ -708,6 +803,24 @@ export const SiteSettingsDocument = gql`
   }
 }
     `;
+export const TestimonialsDocument = gql`
+    query Testimonials {
+  TestimonialItems {
+    items {
+      content {
+        author_name
+        author_role
+        author_company
+        testimonial
+        author_picture {
+          filename
+          alt
+        }
+      }
+    }
+  }
+}
+    `;
 
 export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string) => Promise<T>;
 
@@ -717,6 +830,7 @@ const CaseStudiesDocumentString = print(CaseStudiesDocument);
 const FaqsDocumentString = print(FaqsDocument);
 const HomePageDocumentString = print(HomePageDocument);
 const SiteSettingsDocumentString = print(SiteSettingsDocument);
+const TestimonialsDocumentString = print(TestimonialsDocument);
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
     CaseStudies(variables?: CaseStudiesQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<{ data: CaseStudiesQuery; extensions?: any; headers: Dom.Headers; status: number; }> {
@@ -730,6 +844,9 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     SiteSettings(variables?: SiteSettingsQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<{ data: SiteSettingsQuery; extensions?: any; headers: Dom.Headers; status: number; }> {
         return withWrapper((wrappedRequestHeaders) => client.rawRequest<SiteSettingsQuery>(SiteSettingsDocumentString, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'SiteSettings', 'query');
+    },
+    Testimonials(variables?: TestimonialsQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<{ data: TestimonialsQuery; extensions?: any; headers: Dom.Headers; status: number; }> {
+        return withWrapper((wrappedRequestHeaders) => client.rawRequest<TestimonialsQuery>(TestimonialsDocumentString, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'Testimonials', 'query');
     }
   };
 }

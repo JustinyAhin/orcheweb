@@ -1,7 +1,7 @@
 ---
 // Data
 import type { Feature } from "../lib/data/site-data";
-import { homepage, caseStudies } from "../lib/data/site-data";
+import { homepage, caseStudies, testimonials } from "../lib/data/site-data";
 
 import Base from "../layouts/Base.astro";
 import FAQ from "../components/FAQ.astro";
@@ -140,35 +140,33 @@ import FAQ from "../components/FAQ.astro";
         Don't just take our word for it. See what our customers say
       </h2>
 
-      <div class="flex flex-col bg-white sm:flex-row shadow-m">
-        <div class="basis-6/12">
-          <img
-            src="https://res.cloudinary.com/orcheweb/image/upload/w_600/v1661013284/orcheweb/portrait-ernest-bio-bogore_zyvnsm.webp"
-            alt="Ernest Bio Bogore portrait"
-            height="600"
-            width="600"
-          />
-        </div>
-        <div class="flex flex-col gap-8 justify-center p-8 sm:p-16 basis-6/12">
-          <p class="text-2xl">
-            I've worked with several devs in the past, and Justin is by far the
-            best. He passionately took on my project from start to end within
-            the deadline and even went extra mile to do things that were not on
-            the scope of work.
-          </p>
-          <p class="text-2xl">
-            The website he built for me is 10x faster than what I had,
-            responsive on all front, and flawless SEO-wise. He regularly helps
-            me keep the site performing and I strongly recommend him.
-          </p>
-          <div class="space-y-1">
-            <h3>Ernest Bio Bogore</h3>
-            <p class="text-2xl font-bold text-gray-600">
-              Head of Email at Company Nerdy Joe
-            </p>
-          </div>
-        </div>
-      </div>
+      {
+        testimonials.map((testimonial) => {
+          return (
+            <div class="flex flex-col bg-white sm:flex-row shadow-md single-testimonial">
+              <div class="basis-6/12">
+                <img
+                  src={testimonial.content.author_picture.filename}
+                  alt={testimonial.content.author_picture.alt}
+                  height="600"
+                  width="600"
+                />
+              </div>
+              <div class="flex flex-col gap-4 justify-center p-8 sm:p-16 basis-6/12">
+                <Fragment set:html={testimonial.content.testimonial} />
+
+                <div class="space-y-1">
+                  <h3>{testimonial.content.author_name}</h3>
+                  <p class="text-2xl font-bold text-gray-600">
+                    {testimonial.content.author_role} at{" "}
+                    {testimonial.content.author_company}
+                  </p>
+                </div>
+              </div>
+            </div>
+          );
+        })
+      }
     </div>
   </section>
 </Base>

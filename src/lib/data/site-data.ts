@@ -50,4 +50,16 @@ faq.forEach((faqItem) => {
   faqItem.content.answer = renderRichText(faqItem.content.answer);
 });
 
-export { settings, homepage, caseStudies, faq };
+// Testimonials
+const {
+  data: {
+    TestimonialItems: { items: testimonials },
+  },
+} = await sdk.Testimonials();
+
+testimonials.forEach((testimonial) => {
+  testimonial.content.testimonial = renderRichText(
+    testimonial.content.testimonial)
+});
+
+export { settings, homepage, caseStudies, faq, testimonials };
