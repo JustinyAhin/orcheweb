@@ -43,15 +43,16 @@ import FAQ from "../components/FAQ.astro";
         return (
           <>
             <div class="flex flex-col shadow-xl lg:flex-row bg-light-cyan">
-              <div>
+              <div class="basis-7/12">
                 <img
                   src={caseStudy.content.featuredImage.filename}
                   alt={caseStudy.content.featuredImage.alt}
-                  class="w-auto h-full"
+                  width="1500"
+                  height="920"
                 />
               </div>
 
-              <div class="p-8 space-y-4 sm:p-12 basis-6/12">
+              <div class="p-8 space-y-4 sm:p-12 basis-5/12">
                 <h3 class="text-2xl sm:text-3xl">{caseStudy.content.title}</h3>
                 <div set:html={caseStudy.content.description} />
                 <a
