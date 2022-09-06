@@ -141,24 +141,21 @@ import FAQ from "../components/FAQ.astro";
         Don't just take our word for it. See what others are saying about us.
       </h2>
 
-      <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
         {
           testimonials.map((testimonial) => {
             return (
-              <div class="bg-white shadow-md single-testimonial">
-                <img
-                  src={testimonial.content.author_picture.filename}
-                  alt={testimonial.content.author_picture.alt}
-                  height="600"
-                  width="600"
-                  loading="lazy"
-                />
-                <div class="p-8 space-y-4 sm:p-16">
-                  <div class="space-y-2">
-                    <Fragment set:html={testimonial.content.testimonial} />
-                  </div>
-
-                  <div class="space-y-1">
+              <div class="p-8 space-y-8 bg-white rounded-xl shadow-xl sm:p-16 single-testimonial">
+                <div class="flex gap-4 items-center">
+                  <img
+                    src={`${testimonial.content.author_picture.filename}/m/100x100`}
+                    alt={testimonial.content.author_picture.alt}
+                    height="100"
+                    width="100"
+                    loading="lazy"
+                    class="rounded-full"
+                  />
+                  <div>
                     <h3 class="text-2xl">{testimonial.content.author_name}</h3>
                     <p class="text-lg">
                       {" "}
@@ -166,6 +163,10 @@ import FAQ from "../components/FAQ.astro";
                       {testimonial.content.author_company}
                     </p>
                   </div>
+                </div>
+
+                <div class="space-y-2">
+                  <Fragment set:html={testimonial.content.testimonial} />
                 </div>
               </div>
             );
