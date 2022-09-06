@@ -1,18 +1,18 @@
 query CaseStudies {
-	CasestudyItems {
-		items {
-			content {
-				title
-				description
-				websiteUrl {
-					url
-				}
-				featuredImage {
-					id
-					alt
-					filename
-				}
-			}
-		}
-	}
+  CasestudyItems {
+    items {
+      content {
+        title
+        description
+        websiteUrl {
+          url
+        }
+        featuredImage {
+          id
+          alt
+          filename
+        }
+      }
+    }
+  }
 }

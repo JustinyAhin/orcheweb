@@ -1,13 +1,13 @@
 query SiteSettings {
-	SettingsItem(id: "183738123") {
-		id
-		content {
-			name
-			slogan
-			url {
-				url
-			}
-			email
-		}
-	}
+  SettingsItem(id: "183738123") {
+    id
+    content {
+      name
+      slogan
+      url {
+        url
+      }
+      email
+    }
+  }
 }

@@ -53,10 +53,10 @@
 
   /* Misc */
   .feature svg {
-		@apply stroke-ruby-red h-16 w-16;
-	}
+    @apply stroke-ruby-red h-16 w-16;
+  }
 
-	summary svg {
-		@apply stroke-ruby-red stroke-[px];
-	}
+  summary svg {
+    @apply stroke-ruby-red stroke-[px];
+  }
 }

@@ -1,8 +1,8 @@
 query HomePage {
-	HomepageItem(id: "183831915") {
-		id
-		content {
-			features
-		}
-	}
+  HomepageItem(id: "183831915") {
+    id
+    content {
+      features
+    }
+  }
 }
