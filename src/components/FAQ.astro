@@ -29,27 +29,3 @@ import { faq } from "../lib/data/site-data";
     ))
   }
 </div>
-
-<script>
-  // Open the first FAQ item on page
-  const faqItems = document.querySelectorAll("details");
-
-  if (faqItems[0]) {
-    faqItems[0].open = true;
-  }
-
-  // Close all other FAQ items when one is clicked
-  faqItems.forEach((faqItem) => {
-    faqItem.addEventListener("click", () => {
-      const otherFaqItems = Array.from(faqItems).filter(
-        (item) => item !== faqItem
-      );
-
-      otherFaqItems.forEach((item) => {
-        if (item.open) {
-          item.open = false;
-        }
-      });
-    });
-  });
-</script>
