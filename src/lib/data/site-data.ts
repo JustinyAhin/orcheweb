@@ -59,7 +59,8 @@ const {
 
 testimonials.forEach((testimonial) => {
   testimonial.content.testimonial = renderRichText(
-    testimonial.content.testimonial)
+    testimonial.content.testimonial
+  );
 });
 
 export { settings, homepage, caseStudies, faq, testimonials };
