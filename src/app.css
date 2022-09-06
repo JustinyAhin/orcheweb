@@ -52,11 +52,11 @@
   }
 
   /* Misc */
-  /* .feature svg {
+  .feature svg {
 		@apply stroke-ruby-red h-16 w-16;
 	}
 
 	summary svg {
 		@apply stroke-ruby-red stroke-[px];
-	} */
+	}
 }

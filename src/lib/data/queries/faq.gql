@@ -1,0 +1,12 @@
+
+query Faqs {
+	FaqItems {
+		items {
+			id
+			content {
+				question
+				answer
+			}
+		}
+	}
+}

@@ -634,6 +634,16 @@ export type CaseStudiesQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type CaseStudiesQuery = { __typename?: 'QueryType', CasestudyItems: { __typename?: 'CasestudyItems', items: Array<{ __typename?: 'CasestudyItem', content: { __typename?: 'CasestudyComponent', title: string, description: any, websiteUrl: { __typename?: 'Link', url: string }, featuredImage: { __typename?: 'Asset', id: number, alt: string, filename: string } } }> } };
 
+export type FaqsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type FaqsQuery = { __typename?: 'QueryType', FaqItems: { __typename?: 'FaqItems', items: Array<{ __typename?: 'FaqItem', id: number, content: { __typename?: 'FaqComponent', question: string, answer: any } }> } };
+
+export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type HomePageQuery = { __typename?: 'QueryType', HomepageItem: { __typename?: 'HomepageItem', id: number, content: { __typename?: 'HomepageComponent', features: any } } };
+
 export type SiteSettingsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -660,6 +670,29 @@ export const CaseStudiesDocument = gql`
   }
 }
     `;
+export const FaqsDocument = gql`
+    query Faqs {
+  FaqItems {
+    items {
+      id
+      content {
+        question
+        answer
+      }
+    }
+  }
+}
+    `;
+export const HomePageDocument = gql`
+    query HomePage {
+  HomepageItem(id: "183831915") {
+    id
+    content {
+      features
+    }
+  }
+}
+    `;
 export const SiteSettingsDocument = gql`
     query SiteSettings {
   SettingsItem(id: "183738123") {
@@ -681,11 +714,19 @@ export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, str
 
 const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationType) => action();
 const CaseStudiesDocumentString = print(CaseStudiesDocument);
+const FaqsDocumentString = print(FaqsDocument);
+const HomePageDocumentString = print(HomePageDocument);
 const SiteSettingsDocumentString = print(SiteSettingsDocument);
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
     CaseStudies(variables?: CaseStudiesQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<{ data: CaseStudiesQuery; extensions?: any; headers: Dom.Headers; status: number; }> {
         return withWrapper((wrappedRequestHeaders) => client.rawRequest<CaseStudiesQuery>(CaseStudiesDocumentString, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'CaseStudies', 'query');
+    },
+    Faqs(variables?: FaqsQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<{ data: FaqsQuery; extensions?: any; headers: Dom.Headers; status: number; }> {
+        return withWrapper((wrappedRequestHeaders) => client.rawRequest<FaqsQuery>(FaqsDocumentString, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'Faqs', 'query');
+    },
+    HomePage(variables?: HomePageQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<{ data: HomePageQuery; extensions?: any; headers: Dom.Headers; status: number; }> {
+        return withWrapper((wrappedRequestHeaders) => client.rawRequest<HomePageQuery>(HomePageDocumentString, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'HomePage', 'query');
     },
     SiteSettings(variables?: SiteSettingsQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<{ data: SiteSettingsQuery; extensions?: any; headers: Dom.Headers; status: number; }> {
         return withWrapper((wrappedRequestHeaders) => client.rawRequest<SiteSettingsQuery>(SiteSettingsDocumentString, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'SiteSettings', 'query');
