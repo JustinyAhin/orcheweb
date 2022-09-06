@@ -136,37 +136,40 @@ import FAQ from "../components/FAQ.astro";
 
   <section class="py-32 bg-light-cyan text-jungle-green" id="textimonials">
     <div class="space-y-16 main-container">
-      <h2 class="sm:w-9/12">
-        Don't just take our word for it. See what our customers say
+      <h2>
+        Don't just take our word for it. See what others are saying about us.
       </h2>
 
-      {
-        testimonials.map((testimonial) => {
-          return (
-            <div class="flex flex-col bg-white shadow-md sm:flex-row single-testimonial">
-              <div class="basis-6/12">
+      <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
+        {
+          testimonials.map((testimonial) => {
+            return (
+              <div class="bg-white shadow-md single-testimonial">
                 <img
                   src={testimonial.content.author_picture.filename}
                   alt={testimonial.content.author_picture.alt}
                   height="600"
                   width="600"
                 />
-              </div>
-              <div class="flex flex-col gap-4 justify-center p-8 sm:p-16 basis-6/12">
-                <Fragment set:html={testimonial.content.testimonial} />
+                <div class="p-8 space-y-4 sm:p-16">
+                  <div class="space-y-2">
+                    <Fragment set:html={testimonial.content.testimonial} />
+                  </div>
 
-                <div class="space-y-1">
-                  <h3>{testimonial.content.author_name}</h3>
-                  <p class="text-2xl font-bold text-gray-600">
-                    {testimonial.content.author_role} at{" "}
-                    {testimonial.content.author_company}
-                  </p>
+                  <div class="space-y-1">
+                    <h3 class="text-2xl">{testimonial.content.author_name}</h3>
+                    <p class="text-lg">
+                      {" "}
+                      {testimonial.content.author_role} at{" "}
+                      {testimonial.content.author_company}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })
-      }
+            );
+          })
+        }
+      </div>
     </div>
   </section>
 </Base>

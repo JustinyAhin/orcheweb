@@ -56,10 +56,6 @@
     @apply stroke-ruby-red h-16 w-16;
   }
 
-  .single-testimonial p {
-    @apply text-2xl;
-  }
-
   summary svg {
     @apply stroke-ruby-red stroke-[px];
   }
