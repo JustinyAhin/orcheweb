@@ -27,7 +27,6 @@ export const actions: Actions = {
 		const formData = await request.formData();
 		const repoUrlOrPath = formData.get('repo');
 
-
 		if (repoUrlOrPath !== null) {
 			const safeRepoUrlOrPath = repoUrlOrPath.toString().trim();
 
@@ -38,10 +37,10 @@ export const actions: Actions = {
 					throw redirect(302, url);
 				}
 
-				return invalid(400, { error: true, message: "Invalid GitHub repo URL or path." });
+				return invalid(400, { error: true, message: 'Invalid GitHub repo URL or path.' });
 			}
 
 			return invalid(400, { error: true, message: 'GitHub URL or path cannot be empty.' });
 		}
-	},
+	}
 };

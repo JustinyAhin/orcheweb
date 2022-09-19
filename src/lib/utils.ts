@@ -1,14 +1,12 @@
-import { octokitWrapper } from "$lib/client";
+import { octokitWrapper } from '$lib/client';
 
 const accountProjectRegex = /^\/?([[A-Za-z0-9_]+)\/([A-Za-z0-9_]+)(\/?|$)/;
 const githubUrlRegex = /^(?:https?:\/\/)?(?:www\.)?github\.com\/([^/]+)\/([^/]+)/;
 
 const getLatestTag = async (owner: string, repo: string) => {
-
 	const response = await octokitWrapper().request(`GET /repos/${owner}/${repo}/releases/latest`);
 
 	return response.data.tag_name;
-
 };
 
 const redirectUrl = async (repoInput: string) => {

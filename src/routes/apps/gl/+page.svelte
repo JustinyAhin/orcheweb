@@ -59,9 +59,8 @@
 
 		<p>
 			Much better, you can also append the repository URL or path to this site's URL to get a direct
-			download link. (eg: <a
-				href={`${canonical}?repo=JustinyAhin/gl`}
-				class="link-default">`{canonical}?repo=JustinyAhin/gl`</a
+			download link. (eg: <a href={`${canonical}?repo=JustinyAhin/gl`} class="link-default"
+				>`{canonical}?repo=JustinyAhin/gl`</a
 			>).
 		</p>
 	</div>
