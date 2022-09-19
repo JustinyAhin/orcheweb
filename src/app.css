@@ -5,11 +5,11 @@
 @layer base {
 	/* Headings */
 	h1 {
-		@apply text-5xl sm:text-7xl font-bold;
+		@apply text-5xl sm:text-7xl font-bold text-jungle-green;
 	}
 
 	h2 {
-		@apply text-4xl sm:text-6xl font-bold;
+		@apply text-4xl sm:text-6xl font-bold text-jungle-green;
 	}
 
 	h3 {
