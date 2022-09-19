@@ -3,42 +3,42 @@
 @tailwind utilities;
 
 @layer base {
-  /* Headings */
-  h1 {
-    @apply text-5xl sm:text-7xl font-bold;
-  }
+	/* Headings */
+	h1 {
+		@apply text-5xl sm:text-7xl font-bold;
+	}
 
-  h2 {
-    @apply text-4xl sm:text-6xl font-bold;
-  }
+	h2 {
+		@apply text-4xl sm:text-6xl font-bold;
+	}
 
-  h3 {
-    @apply text-3xl sm:text-5xl font-bold text-gray-700;
-  }
+	h3 {
+		@apply text-3xl sm:text-5xl font-bold text-gray-700;
+	}
 
-  h4 {
-    @apply text-2xl sm:text-4xl font-bold text-gray-700;
-  }
+	h4 {
+		@apply text-2xl sm:text-4xl font-bold text-gray-700;
+	}
 
-  /* Paragraphs */
-  p {
-    @apply text-xl;
-  }
+	/* Paragraphs */
+	p {
+		@apply text-xl;
+	}
 }
 
 @layer components {
-  /* Links */
-  .link-default {
-    @apply text-ruby-red font-bold hover:underline;
-  }
+	/* Links */
+	.link-default {
+		@apply text-ruby-red font-bold hover:underline;
+	}
 
-  /* Actions */
-  .action-default {
-    @apply flex py-4 px-6 text-xl font-bold w-fit;
-  }
+	/* Actions */
+	.action-default {
+		@apply flex py-4 px-6 text-xl font-bold w-fit;
+	}
 
-  /* Containers */
-  .main-container {
-    @apply mx-auto max-w-7xl px-6;
-  }
+	/* Containers */
+	.main-container {
+		@apply mx-auto max-w-7xl px-6;
+	}
 }
