@@ -37,42 +37,8 @@
     @apply flex py-4 px-6 text-xl font-bold w-fit;
   }
 
-  /* Content */
-  .content {
-    @apply space-y-4;
-  }
-
-  .content ul {
-    @apply text-xl list-disc pl-8;
-  }
-
   /* Containers */
   .main-container {
     @apply mx-auto max-w-7xl px-6;
-  }
-
-  /* Misc */
-  .feature .description p {
-    @apply text-lg text-gray-600;
-  }
-
-  .feature a {
-    @apply link-default;
-  }
-
-  .feature svg {
-    @apply stroke-ruby-red h-16 w-16;
-  }
-
-  summary svg {
-    @apply stroke-ruby-red stroke-[px];
-  }
-
-  details .answer p {
-    @apply text-lg text-gray-700;
-  }
-
-  details .answer a {
-    @apply link-default;
   }
 }
