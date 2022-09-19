@@ -5,7 +5,7 @@
 </script>
 
 <MetaTags
-	title="OrcheWeb - Building open source apps for the web"
+	title="OrcheWeb • Building open source apps for the web"
 	description="OrcheWeb is an 'lab' where we build open source apps for the web."
 	canonical={$page.url.href}
 	twitter={{

@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { ActionData } from './$types';
 
+	import { MetaTags } from 'svelte-meta-tags';
+
 	import { page } from '$app/stores';
 	import { enhance } from '$app/forms';
 
@@ -8,6 +10,18 @@
 
 	const { href: canonical } = $page.url;
 </script>
+
+<MetaTags
+	title="gl • 1-click download for your GitHub repositories latest release"
+	description="1-click download for your GitHub repositories latest release."
+	canonical={$page.url.href}
+	twitter={{
+		cardType: 'summary_large_image',
+		handle: '@iamsegbedji',
+		image:
+			'https://res.cloudinary.com/orcheweb/image/upload/v1663602683/orcheweb/orcheweb-og-image_fqmitu.png'
+	}}
+/>
 
 <section class="space-y-8">
 	<div class="space-y-2 text-center sm:w-10/12 mx-auto">
@@ -34,20 +48,20 @@
 		</div>
 	{/if}
 
-	<div>
+	<div class="space-y-2 text-center sm:w-10/12 mx-auto">
 		<p>
 			Just enter a link to a GitHub repository (eg: <a
 				href="https://github.com/JustinyAhin/gl"
-				class="font-bold italic text-ruby-red hover:underline">https://github.com/JustinyAhin/gl</a
+				class="link-default">https://github.com/JustinyAhin/gl</a
 			>) or the path to a repo (eg:
-			<span class="font-bold italic text-ruby-red">JustinyAhin/gl</span>) and you're good to go.
+			<span class="font-bold text-ruby-red">JustinyAhin/gl</span>) and you're good to go.
 		</p>
 
 		<p>
 			Much better, you can also append the repository URL or path to this site's URL to get a direct
 			download link. (eg: <a
 				href={`${canonical}?repo=JustinyAhin/gl`}
-				class="font-bold italic text-ruby-red hover:underline">`{canonical}?repo=JustinyAhin/gl`</a
+				class="link-default">`{canonical}?repo=JustinyAhin/gl`</a
 			>).
 		</p>
 	</div>
