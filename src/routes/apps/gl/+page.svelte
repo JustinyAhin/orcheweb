@@ -51,16 +51,16 @@
 	<div class="space-y-2 text-center sm:w-10/12 mx-auto">
 		<p>
 			Just enter a link to a GitHub repository (eg: <a
-				href="https://github.com/JustinyAhin/gl"
-				class="link-default">https://github.com/JustinyAhin/gl</a
+				href="https://github.com/JustinyAhin/orcheweb"
+				class="link-default">https://github.com/JustinyAhin/orcheweb</a
 			>) or the path to a repo (eg:
-			<span class="font-bold text-ruby-red">JustinyAhin/gl</span>) and you're good to go.
+			<span class="font-bold text-ruby-red">JustinyAhin/orcheweb</span>) and you're good to go.
 		</p>
 
 		<p>
 			Much better, you can also append the repository URL or path to this site's URL to get a direct
-			download link. (eg: <a href={`${canonical}?repo=JustinyAhin/gl`} class="link-default"
-				>{canonical}?repo=JustinyAhin/gl</a
+			download link. (eg: <a href={`${canonical}?repo=JustinyAhin/orcheweb`} class="link-default"
+				>{canonical}?repo=JustinyAhin/orcheweb</a
 			>).
 		</p>
 	</div>
