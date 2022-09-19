@@ -24,6 +24,8 @@
 />
 
 <section class="space-y-8">
+	<a href="/" class="link-default absolute left-4 top-4">Return to apps</a>
+
 	<div class="space-y-2 text-center sm:w-10/12 mx-auto">
 		<h1>1-click download for your GitHub repositories latest release</h1>
 	</div>
@@ -54,7 +56,7 @@
 				href="https://github.com/JustinyAhin/orcheweb"
 				class="link-default">https://github.com/JustinyAhin/orcheweb</a
 			>) or the path to a repo (eg:
-			<span class="font-bold text-ruby-red">JustinyAhin/orcheweb</span>) and you're good to go.
+			<span class="text-ruby-red">JustinyAhin/orcheweb</span>) and you're good to go.
 		</p>
 
 		<p>

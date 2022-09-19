@@ -5,24 +5,24 @@
 @layer base {
 	/* Headings */
 	h1 {
-		@apply text-5xl sm:text-7xl font-bold text-jungle-green;
-	}
-
-	h2 {
 		@apply text-4xl sm:text-6xl font-bold text-jungle-green;
 	}
 
+	h2 {
+		@apply text-3xl sm:text-5xl font-bold text-jungle-green;
+	}
+
 	h3 {
-		@apply text-3xl sm:text-5xl font-bold text-gray-700;
+		@apply text-2xl sm:text-4xl font-bold text-gray-700;
 	}
 
 	h4 {
-		@apply text-2xl sm:text-4xl font-bold text-gray-700;
+		@apply text-xl sm:text-3xl font-bold text-gray-700;
 	}
 
 	/* Paragraphs */
 	p {
-		@apply text-xl;
+		@apply sm:text-lg;
 	}
 }
 

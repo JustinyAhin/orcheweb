@@ -10,6 +10,6 @@
 
 	<a
 		href={`${$page.url.origin}${$page.url.pathname}`}
-		class="flex text-ruby-red font-bold hover:underline">Return to app page</a
+		class="flex text-ruby-red font-bold hover:underline">Return to apps</a
 	>
 </section>
