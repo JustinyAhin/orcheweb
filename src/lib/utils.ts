@@ -1,6 +1,6 @@
 import { octokitWrapper } from '$lib/client';
 
-const accountProjectRegex = /^\/?([[A-Za-z0-9_]+)\/([A-Za-z0-9_]+)(\/?|$)/;
+const accountProjectRegex = /^\/?([[A-Za-z0-9_]+)\/([A-Za-z0-9_-]+)(\/?|$)/;
 const githubUrlRegex = /^(?:https?:\/\/)?(?:www\.)?github\.com\/([^/]+)\/([^/]+)/;
 
 const getLatestTag = async (owner: string, repo: string) => {
